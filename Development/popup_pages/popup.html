@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/popup.css">
+        <link rel="stylesheet" href="./style/common.css">
+    </head>
+    <body>
+        <header>
+            <img src="./images/txt-logo_trans.png" class="logo-left" />
+            <img src="./images/logo2.png" class="logo-right" />
+            <br />
+            <div id="nav">
+                <a href="popup.html" class="nav-a active-nav">
+                    <img src="./images/ProfilesEnabled.svg" class="nav-img" alt="nav-icon" />
+                    <span class="nav-txt active-txt">Profiles</span>
+                </a>
+                <a href="create_profile.html" class="nav-a">
+                    <img src="./images/CreateProfilesDisabled.svg" class="nav-img" alt="nav-icon" />
+                    <span class="nav-txt">Create Profiles</span>
+                </a>
+                <a href="configuration.html" class="nav-a">
+                    <img src="./images/ConfigurationDisabled.svg" class="nav-img" alt="nav-icon" />
+                    <span class="nav-txt">Configuration</span>
+                </a>
+                <a href="setting.html" class="nav-a">
+                    <img src="./images/SettingsDisabled.svg" class="nav-img" alt="nav-icon" />
+                    <span class="nav-txt">Settings</span>
+                </a>
+            </div>
+        </header>
+
+        <div id="notification">
+            <p id="notification-text"></p>
+            <div id="notification-loader"></div>
+        </div>
+
+        <div id="main-content" class="container">
+            <div id="profiles">
+
+            </div>
+        </div>
+
+        <div id="login">
+            <div class="flex flex-row">
+                <img src="./images/logo.png" id="login-left-img" />
+                <div class="flex flex-col" style="margin:50px">
+                    <h2 class="login-header">Login</h2>
+                    <input type="password" class="login-input" id="login-input" placeholder="License Name" />
+                    <button class="button-login" id="login-button">Login</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="./scripts/popup.js"></script>
+</html>

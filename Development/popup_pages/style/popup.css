@@ -1,0 +1,223 @@
+body{
+    height: 500px;
+    width: 760px;
+    background: #12101e;
+    margin: 0;
+    bottom: 0;
+}
+
+*{
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+#main-content{
+    display: none;
+}
+
+#login{
+    display: none;
+}
+
+#login-left-img {
+    background: url('../images/logo.png') no-repeat;
+    background-size: auto;
+    margin-top: -15px;
+    width: 330px;
+    height: 515px;
+    margin-bottom:0;
+    display: block;
+    max-width:330px;
+    max-height:515px;
+    object-fit: cover;
+}
+
+.button-login {
+    margin-top: 30px;
+    width: 312px;
+}
+
+.button-login {
+    width: 100%;
+    background-color: #6c62da;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.button-login:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.login-input {
+    width: 312px;
+}
+
+.login-header {
+    margin-top: 100px;
+    color:white;
+}
+
+.login-txt-logo {
+    width: 200px;
+    margin-top: 20px;
+}
+
+/**
+ * Nav bar
+ */
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+#profiles {
+    padding-right: 10px;
+}
+
+.logo-left {
+    position: absolute;
+    top: 21px;
+    left: 30px;
+    height: 25px;
+    width: 157px;
+}
+
+.logo-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 270px;
+    margin-bottom:0;
+    display: block;
+    max-width:330px;
+    max-height:515px;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
+
+#nav {
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+    display: flex;
+}
+
+.nav-a {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 40px;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 0 5px;
+}
+
+.nav-a:hover {
+    background-color: #6c62da;
+    border-radius: 5px;
+}
+
+.nav-a:hover .nav-txt{
+    color: #dedede;
+}
+
+.nav-img {
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    opacity: 0.8;
+    margin-right: 5px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.nav-txt {
+    font-size: 13px;
+    color: gray;
+    font-weight: 500;
+}
+
+.active-txt {
+    color: white !important;
+}
+
+.active-nav {
+    border-bottom: 2px solid #6c62da;
+    color: white;
+}
+
+#notification {
+    position: absolute;
+    background-color: #6c62da;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 250px;
+    border: 1px solid #084a80;
+    border-radius: 3px;
+    display: none;
+}
+
+#notification-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#notification-loader{
+    height: 5px;
+    width: 100%;
+    background: #8371E8;
+    position: absolute;
+    bottom: 0;
+}
+
+/**
+ * Main Content Part
+ */
+.profile-item {
+    background-color: #171D2B;
+    display:flex;
+    flex-direction: row;
+    color:white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left: 5px solid #6c62da;
+    margin-bottom: 10px;
+}
+
+.profile-item:hover {
+    cursor: pointer;
+    border-top: 1px solid #6c62da;
+    border-right: 1px solid #6c62da;
+    border-bottom: 1px solid #6c62da;
+    border-left: 5px solid #6c62da;
+}
+
+.active-profile {
+    border-top: 1px solid #6c62da;
+    border-right: 1px solid #6c62da;
+    border-bottom: 1px solid #6c62da;
+    border-left: 5px solid #6c62da;
+}
+
+.margin-left-minus {
+    margin-left: -100px
+}
+
+.profile-name-width {
+    width: 225px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 10px;
+}

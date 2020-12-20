@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #5D5DA2;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#upper-bar{
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #24244E;
+}
+
+.upper-logo{
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#middle{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+}
+
+.add-button{
+    height: 30px;
+    width: 185px;
+    color: white;
+    background: #24244E;
+    border: none;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+.save-button{
+    height: 30px;
+    width: 185px;
+    color: white;
+    background: #24244E;
+    border: none;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+#delete-btn{
+    background: none;
+    border: none;
+}
+
+
+#custom-div{
+    width: 380px;
+    height: 450px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    overflow-y: scroll;
+}
+
+/* width */
+#custom-div::-webkit-scrollbar {
+    width: 2px;
+}
+  
+  /* Track */
+#custom-div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+#custom-div::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+  /* Handle on hover */
+#custom-div::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+#custom-key{
+    width: 120px;
+    height: 30px;
+    background: #24244E80;
+    border: none;
+    border-radius: 2px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    color: white; 
+    margin-right: 10px;  
+    margin-bottom: 10px;
+}
+
+#custom-value{
+    width: 120px;
+    height: 30px;
+    background: #24244E80;
+    border: none;
+    border-radius: 2px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    color: white;
+    margin-right: 10px;   
+}
+
+#custom-delay{
+    width: 80px;
+    height: 30px;
+    background: #24244E80;
+    border: none;
+    border-radius: 2px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    color: white; 
+}
+
+

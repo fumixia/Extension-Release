@@ -1,0 +1,33 @@
+.input-max {
+    width: 100%;
+}
+
+.hook-input {
+    width: 70%;
+}
+
+.hook_button {
+    width: 20%;
+    background-color: #6c62da;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.hook_button:hover {
+    cursor: pointer;
+}
+
+.w-input-mid {
+    width: 46%;
+}
+
+.bottom-position {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+#config-content::-webkit-scrollbar {
+    display: none;
+}
