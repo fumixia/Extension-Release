@@ -36,7 +36,8 @@
 			"js": [
 				"scripts/shopifyatc.js",
 				"scripts/inject.js",
-				"scripts/animationremover.js"
+				"scripts/animationremover.js",
+				"scripts/ducky.js"
 			],
 			"all_frames": true
 		},
@@ -159,7 +160,7 @@
 		},
 		{
 			"matches": [
-			  "https://tldashboard.com/*"
+			  "https://www.tldashboards.com/*"
 			],
 			"js": [
 			  "scripts/tl_dashboard.js"
