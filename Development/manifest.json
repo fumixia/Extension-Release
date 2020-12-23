@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "TweetNinja Autofill/ACO",
+	"name": "TweetNinja Autofill/ACO",
     "description":"Autofill/ACO developed by TweetNinja",
     "version": "3.0",
     "icons": {"128": "./icons/icon_128.png"},
@@ -36,7 +36,8 @@
 			"js": [
 				"scripts/shopifyatc.js",
 				"scripts/inject.js",
-				"scripts/animationremover.js"
+				"scripts/animationremover.js",
+				"scripts/ducky.js"
 			],
 			"all_frames": true
 		},
@@ -159,7 +160,7 @@
 		},
 		{
 			"matches": [
-			  "https://tldashboard.com/*"
+			  "https://www.tldashboards.com/*"
 			],
 			"js": [
 			  "scripts/tl_dashboard.js"
