@@ -1,7 +1,7 @@
 /**
  * essencial classes
  */
-.container {
+ .container {
     margin: 20px 30px;
     height: 360px;
     overflow-y: scroll;
@@ -19,6 +19,14 @@ input {
 input:focus {
     border: 1px solid #6c62da;
     outline: none;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+select:disabled {
+    cursor: not-allowed;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
