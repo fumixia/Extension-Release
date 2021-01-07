@@ -1,7 +1,7 @@
 body{
     height: 500px;
     width: 760px;
-    background: #12101e;
+    background: #030610;
     margin: 0;
     bottom: 0;
 }
@@ -141,7 +141,7 @@ header {
 .nav-txt {
     font-size: 13px;
     color: gray;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .active-txt {
@@ -185,6 +185,10 @@ header {
 /**
  * Main Content Part
  */
+#profiles {
+    margin-top: 1px;
+}
+
 .profile-item {
     background-color: #171D2B;
     display:flex;
@@ -194,6 +198,8 @@ header {
     border-radius: 5px;
     border-left: 5px solid #6c62da;
     margin-bottom: 10px;
+    position: relative;
+    outline: none;
 }
 
 .profile-item:hover {
@@ -202,6 +208,9 @@ header {
     border-right: 1px solid #6c62da;
     border-bottom: 1px solid #6c62da;
     border-left: 5px solid #6c62da;
+    margin-top: -1px;
+    margin-bottom: 9px;
+    outline: none;
 }
 
 .active-profile {
@@ -209,6 +218,9 @@ header {
     border-right: 1px solid #6c62da;
     border-bottom: 1px solid #6c62da;
     border-left: 5px solid #6c62da;
+    margin-top: -1px;
+    margin-bottom: 9px;
+    outline: none;
 }
 
 .margin-left-minus {

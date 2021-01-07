@@ -1,10 +1,10 @@
 .shipping-same-check {
-    margin: 14px 0 0 23px;
+    margin: 14px 0 0 23px !important;
     border: 1px solid #6c62da;
 }
 
 .shipping-check-label {
-    margin: 13px 5px;
+    margin: 13px 5px !important;
     font-size: 11px;
     color: gray;
 }

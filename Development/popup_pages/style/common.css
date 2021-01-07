@@ -14,19 +14,21 @@ input {
     padding: 10px;
     border-radius: 5px;
     background-color: #171D2B;
+    font-weight: 750;
+    font-size: 11px;
 }
 
 input:focus {
     border: 1px solid #6c62da;
     outline: none;
+    position: relative;
+    margin: -1px;
 }
 
 input:disabled {
     cursor: not-allowed;
-}
-
-select:disabled {
-    cursor: not-allowed;
+    background-color: #171627;
+    color: #5e5e62;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -37,23 +39,30 @@ select {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    background-color: #1a182b;
+    background-color: #171D2B;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
     background-repeat: no-repeat;
     background-position-x: 98%;
     background-position-y: 5px;
-    color: gray;
+    font-weight: 750;
+    font-size: 11px;
 }
 
 select:focus {
     border: 1px solid #6c62da;
     outline: none;
+    margin: -1px;
 }
 
-select option:first-child { color: grey; }
-select.empty { color: grey; }
+select:disabled {
+    cursor: not-allowed;
+    background-color: #171D2B;
+}
+
+select.empty { color: #75768F; }
+select option { color: #75768F}
 
 .flex {
     display: flex;
@@ -84,7 +93,7 @@ select.empty { color: grey; }
     display: flex;
     flex-direction: row;
     position: absolute;
-    right: 50px;
+    right: 10px;
     margin-top: 8px;
 }
 
@@ -145,11 +154,23 @@ select.empty { color: grey; }
 }
 
 .ml-2 {
-    margin-left: 2%;
+    margin-left: 2% !important;
+}
+
+.ml-1 {
+    margin-left: 1px;
+}
+
+.mr-1 {
+    margin-right: 1px;
 }
 
 .ml-10 {
     margin-left: 10%;
+}
+
+.mr-2 {
+    margin-right: 2%;
 }
 
 .pt-5 {
@@ -224,4 +245,19 @@ select.empty { color: grey; }
 .button-save:hover {
     cursor: pointer;
     opacity: 0.7;
+}
+
+.button-state {
+    width: 32%;
+    background-color: #171D2B;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.active-state {
+    background: linear-gradient(83deg, rgba(108,98,218,1) 0%, rgba(151,143,237,1) 100%);
+    color: white;
+    transition-duration: 600ms, 600ms;
+    transition-property: background-color, color;
 }

@@ -22,12 +22,12 @@
             <span class="nav-txt">Create Profiles</span>
         </a>
         <a href="configuration.html" class="nav-a active-nav">
-            <img src="./images/ConfigurationEnabled.svg" class="nav-img" alt="nav-icon" />
-            <span class="nav-txt active-txt">Configuration</span>
+            <img src="./images/SettingsEnabled.svg" class="nav-img" alt="nav-icon" />
+            <span class="nav-txt active-txt">Settings</span>
         </a>
         <a href="setting.html" class="nav-a">
-            <img src="./images/SettingsDisabled.svg" class="nav-img" alt="nav-icon" />
-            <span class="nav-txt">Settings</span>
+            <img src="./images/ConfigurationDisabled.svg" class="nav-img" alt="nav-icon" />
+            <span class="nav-txt">Configuration</span>
         </a>
     </div>
 </header>
@@ -40,16 +40,15 @@
 <div id="config-content" class="container">
     <div>
         <h3 class="mh-5 txt-big-weight">Configure</h3>
-        <div class="flex-row justify-content-between">
+        <div class="flex-row justify-content-between ml-1">
             <input class="hook-input" id="discord_webhook" placeholder="Discord Webhook" />
             <Button type="button" id="test_webhook" class="hook_button">Test Webhook</button>
         </div>
-        <div class="flex justify-content-between mh-10">
-            <input class="w-input-mid" id="twitter_id" placeholder="Twitter ID" />
+        <div class="flex justify-content-between mh-10 ml-1 mr-1">
             <input class="w-input-mid" id="twitter_username" placeholder="Twitter Username" />
-        </div>
-        <div class="flex justify-content-between mh-10">
             <input class="w-input-mid" id="discord_username" placeholder="Discord Username" />
+        </div>
+        <div class="flex justify-content-between mh-10 ml-1">
             <input class="w-input-mid" id="discord_id" placeholder="Discord ID" />
         </div>
         <div>

@@ -6,17 +6,17 @@
 }
 
 .setting-sites {
-    background-color: #03031c;
+    background-color: #030610;
     height: 100%;
 }
 
 .setting-dashboard {
-    background-color: #161126;
+    background-color: #101727;
     height: 100%;
 }
 
 .setting-other {
-    background-color: #03031c;
+    background-color: #030610;
     height: 100%;
 }
 
@@ -25,10 +25,11 @@
     flex-direction: column;
     overflow-y: scroll;
     height: 86%;
+    margin-right: 10px;
 }
 
 .button-setting {
-    width: 80%;
+    width: 85%;
     background-color: #171D2B;
     color: #75768F;
     font-weight: 700;
@@ -39,7 +40,7 @@
     padding: 15px;
     white-space: nowrap;
     text-align: center;
-    transition-duration: 200ms, 200ms;
+    transition-duration: 600ms, 600ms;
     transition-property: background-color, color;
 }
 
@@ -50,7 +51,7 @@
 }
 
 .button-setting-dashboard {
-    width: 80%;
+    width: 85%;
     background-color: #222939;
     color: rgb(134, 134, 134);
     font-weight: 700;
@@ -61,7 +62,7 @@
     padding: 15px;
     white-space: nowrap;
     text-align: center;
-    transition-duration: 200ms, 200ms;
+    transition-duration: 600ms, 600ms;
     transition-property: background-color, color;
 }
 
@@ -72,8 +73,8 @@
 }
 
 .active-setting {
-    transition-duration: 200ms, 200ms;
-    transition-property: background-color, color;
-    background-color: #6c62da;
+    background: linear-gradient(83deg, rgba(108,98,218,1) 0%, rgba(151,143,237,1) 100%);
     color: white;
+    transition-duration: 600ms, 600ms;
+    transition-property: background-color, color;
 }

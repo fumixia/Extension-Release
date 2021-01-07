@@ -28,6 +28,11 @@
     right: 30px;
 }
 
+.bottom-mid {
+    position: absolute;
+    bottom: 30px
+}
+
 #config-content::-webkit-scrollbar {
     display: none;
 }

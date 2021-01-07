@@ -22,12 +22,12 @@
             <span class="nav-txt active-txt">Create Profiles</span>
         </a>
         <a href="configuration.html" class="nav-a">
-            <img src="./images/ConfigurationDisabled.svg" class="nav-img" alt="nav-icon" />
-            <span class="nav-txt">Configuration</span>
-        </a>
-        <a href="setting.html" class="nav-a">
             <img src="./images/SettingsDisabled.svg" class="nav-img" alt="nav-icon" />
             <span class="nav-txt">Settings</span>
+        </a>
+        <a href="setting.html" class="nav-a">
+            <img src="./images/ConfigurationDisabled.svg" class="nav-img" alt="nav-icon" />
+            <span class="nav-txt">Configuration</span>
         </a>
     </div>
 </header>
@@ -40,7 +40,7 @@
     <div id="create-profile-content" class="container">
         <div>
             <h3 class="mh-5 txt-big-weight">General</h3>
-            <div class="flex justify-content-between mb-15">
+            <div class="flex justify-content-between mb-15 ml-1">
                 <input class="input-small" id="profile_name" placeholder="Profile Name" />
                 <input class="input-small" id="profile_email" placeholder="Email" />
                 <input class="input-small" id="profile_phone" placeholder="Phone" />
@@ -49,11 +49,11 @@
 
         <div class="mh-5 mb-15">
             <h3 class="mh-10 txt-big-weight">Shipping</h3>
-            <div class="flex justify-content-between">
+            <div class="flex justify-content-between ml-1">
                 <input class="input-small" id="shipping_fullname" placeholder="Full Name" />
                 <input class="input-mid" id="shipping_address1" placeholder="Address1" />
             </div>
-            <div class="flex justify-content-between mh-10">
+            <div class="flex justify-content-between mh-10 ml-1">
                 <input class="input-small" id="shipping_address2" placeholder="Address2" />
                 <select class="select-small empty" id="shipping_country">
                     <option disabled selected value="default">Country</option>
@@ -349,7 +349,7 @@
                     <option value="WY">Wyoming</option>
                 </select>
             </div>
-            <div class="flex">
+            <div class="flex ml-1">
                 <input class="input-small" id="shipping_city" placeholder="City" />
                 <input class="input-small ml-2" id="shipping_zip" placeholder="Zipcode" />
             </div>
@@ -361,11 +361,11 @@
                 <input type="checkbox" id="same_as_shipping" class="shipping-same-check" />
                 <label class="shipping-check-label">Same as Shipping</label>
             </div>
-            <div class="flex justify-content-between">
+            <div class="flex justify-content-between ml-1">
                 <input class="input-small" id="billing_fullname" placeholder="Full Name" />
                 <input class="input-mid" id="billing_address1" placeholder="Address1" />
             </div>
-            <div class="flex justify-content-between mh-10">
+            <div class="flex justify-content-between mh-10 ml-1">
                 <input class="input-small" id="billing_address2" placeholder="Address2" />
                 <select class="select-small empty" id="billing_country">
                     <option value="default" disabled selected>Country</option>
@@ -661,7 +661,7 @@
                     <option value="WY">Wyoming</option>
                 </select>
             </div>
-            <div class="flex">
+            <div class="flex ml-1">
                 <input class="input-small" id="billing_city" placeholder="City" />
                 <input class="input-small ml-2" id="billing_zip" placeholder="Zipcode" />
             </div>
@@ -669,13 +669,13 @@
 
         <div class="mt-15">
             <h3 class="mh-10 txt-big-weight">Payment</h3>
-            <div class="flex justify-content-between">
+            <div class="flex justify-content-between ml-1">
                 <input class="input-small" id="card_holder" placeholder="Card Holder" />
                 <input class="input-small" id="card_number" placeholder="Card Number" />
                 <input class="input-small" id="card_cvv" placeholder="CVV" />
             </div>
 
-            <div class="flex justify-content-between mh-10">
+            <div class="flex justify-content-between mh-10 ml-1">
                 <select class="select-small empty" id="expiry_month">
                     <option disabled selected>Expiry Month</option>
                     <option value='01'>January</option>
