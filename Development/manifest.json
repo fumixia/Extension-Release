@@ -1,13 +1,13 @@
 {
 	"manifest_version": 2,
-	"name": "TweetNinja Autofill/ACO",
-	"description": "Autofill/ACO developed by TweetNinja",
+	"name": "TweetNinja Extension",
+	"description": "An extension developed by @TweetNinjaLLC",
 	"version": "3.0.0",
 	"icons": {
-		"128": "./icons/icon_128.png"
+		"128": "./icons/logo.png"
 	},
 	"browser_action": {
-		"default_icon": "./icons/icon.png",
+		"default_icon": "./icons/logo.png",
 		"default_popup": "./popup_pages/popup.html"
 	},
 	"content_security_policy": "script-src 'self' https://www.tweet-ninja.com; object-src 'self'",
@@ -62,7 +62,8 @@
 			],
 			"js": [
 				"scripts/diy.js",
-				"scripts/link.js"
+				"scripts/link.js",
+				"scripts/aio.js"
 			],
 			"all_frames": true
 		},
@@ -73,6 +74,15 @@
 			],
 			"js": [
 				"scripts/metalabs.js"
+			],
+			"all_frames": true
+		},
+		{
+			"matches": [
+				"https://*/collections/*"
+			],
+			"js": [
+				"scripts/shopify_request.js"
 			],
 			"all_frames": true
 		},
@@ -202,6 +212,15 @@
 			],
 			"js": [
 				"scripts/addtocart.js"
+			],
+			"all_frames": true
+		},
+		{
+			"matches":[
+				"https://discord.com/oauth2/*"
+			],
+			"js":[
+				"scripts/discord_auth.js"
 			],
 			"all_frames": true
 		}

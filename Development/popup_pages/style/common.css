@@ -253,6 +253,7 @@ select option { color: #75768F}
     color: white;
     border-radius: 5px;
     height: 35px;
+    cursor: pointer;
 }
 
 .active-state {

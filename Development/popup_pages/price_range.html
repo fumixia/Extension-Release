@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/popup.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/config.css">
+    <link rel="stylesheet" href="./style/setting.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/txt-logo_trans.png" class="logo-left" />
+        <img src="./images/logo2.png" class="logo-right" />
+        <br />
+        <div id="nav">
+            <a href="popup.html" class="nav-a">
+                <img src="./images/ProfilesDisabled.svg" class="nav-img" alt="nav-icon" />
+                <span class="nav-txt">Profiles</span>
+            </a>
+            <a href="create_profile.html" class="nav-a">
+                <img src="./images/CreateProfilesDisabled.svg" class="nav-img" alt="nav-icon" />
+                <span class="nav-txt">Create Profiles</span>
+            </a>
+            <a href="configuration.html" class="nav-a">
+                <img src="./images/SettingsDisabled.svg" class="nav-img" alt="nav-icon" />
+                <span class="nav-txt">Settings</span>
+            </a>
+            <a href="setting.html" class="nav-a active-nav">
+                <img src="./images/ConfigurationEnabled.svg" class="nav-img" alt="nav-icon" />
+                <span class="nav-txt active-txt">Configuration</span>
+            </a>
+        </div>
+    </header>
+
+    <div id="notification">
+        <p id="notification-text"></p>
+        <div id="notification-loader"></div>
+    </div>
+
+    <div id="config-content" class="container">
+        <div>
+            <h3 class="mh-5 txt-big-weight">Price Range</h3>
+            <div class="flex-row justify-content-between ml-1 mr-1">
+                <input class="input-mid" id="min_price" placeholder="Minimum Price" />
+                <input class="input-mid" id="max_price" placeholder="Max Price" />
+            </div>
+            <div>
+                <Button type="button" id="price_range_state" class="button-state bottom-mid">Off</button>
+            </div>
+            <div>
+                <Button type="button" id="price_range_save" class="button-save bottom-position">Save</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./scripts/price_range.js"></script>
+
+</html>
