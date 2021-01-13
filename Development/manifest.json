@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "TweetNinja Extension",
+	"name": "TweetNinja Extension -- Dev Version",
 	"description": "An extension developed by @TweetNinjaLLC",
-	"version": "3.0.9",
+	"version": "3.0.10",
 	"icons": {
 		"128": "./icons/logo.png"
 	},
@@ -79,10 +79,10 @@
 		},
 		{
 			"matches": [
-				"https://*/collections/*"
+				"https://*/products/*"
 			],
 			"js": [
-				"scripts/shopify_request.js"
+				"scripts/shopify_request/shopify_request_go_checkout.js"
 			],
 			"all_frames": true
 		},
@@ -100,7 +100,9 @@
 				"https://*/*/checkouts/*"
 			],
 			"js": [
-				"scripts/shopify.js"
+				"scripts/shopify.js",
+				"scripts/shopify_request/shopify_request_checkout.js",
+				"scripts/toasts.js"
 			]
 		},
 		{
