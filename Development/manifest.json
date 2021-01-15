@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "TweetNinja Extension",
+	"name": "TweetNinja Extension -- Dev Version",
 	"description": "An extension developed by @TweetNinjaLLC",
-	"version": "3.0.11",
+	"version": "3.0.0",
 	"icons": {
 		"128": "./icons/logo.png"
 	},
@@ -50,8 +50,7 @@
 			"js": [
 				"scripts/shopifyatc.js",
 				"scripts/inject.js",
-				"scripts/animationremover.js",
-				"scripts/ducky.js"
+				"scripts/animationremover.js"
 			],
 			"all_frames": true
 		},
@@ -63,7 +62,11 @@
 			"js": [
 				"scripts/diy.js",
 				"scripts/link.js",
-				"scripts/aio.js"
+				"scripts/aio.js",
+				"scripts/ducky.js",
+				"scripts/tl_dashboard.js",
+				"scripts/veloaco.js",
+				"scripts/shreyaco.js"
 			],
 			"all_frames": true
 		},
@@ -103,9 +106,9 @@
 			],
 			"js": [
 				"scripts/shopify.js",
-				"scripts/shopify_request/shopify_request_checkout.js",
 				"scripts/toasts.js"
-			]
+			],
+			"all_frames": true
 		},
 		{
 			"matches": [
@@ -169,26 +172,6 @@
 			],
 			"js": [
 				"scripts/googleforms.js"
-			],
-			"all_frames": true
-		},
-		{
-			"matches": [
-				"https://*/*",
-				"http://*/*"
-			],
-			"js": [
-				"scripts/veloaco.js",
-				"scripts/shreyaco.js"
-			],
-			"all_frames": true
-		},
-		{
-			"matches": [
-				"https://www.tldashboards.com/*"
-			],
-			"js": [
-				"scripts/tl_dashboard.js"
 			],
 			"all_frames": true
 		},
