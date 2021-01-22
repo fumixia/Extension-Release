@@ -1,1 +1,133 @@
-const _0x3cce=['addEventListener','48121StKHuR','twitter_username','8417256','Updated\x20config\x20sucessfully!','Success\x20-\x20Your\x20webhook\x20is\x20working!\x20🎉','notification','POST','select_profile','filter','Test\x20Webhook\x20sent!','open','test','application/json','418124vTSJCF','getElementById','click','profiles','width','value','Test\x20Webhook','config','291207zRENMS','stringify','none','21BKwIil','**Date**','local','788974DcBubB','test_webhook','style','1IJpHTv','185644kNCCEu','365855TOXZiC','Content-type','4GHHDwG','profile','toLocaleDateString','config_save','display','discord_id','send','set','30571uiREGI','TweetNinja\x20Extension','storage','1yDrEYP','get','sendMessage','**Selected\x20Profile**','discord_webhook','notification-loader','discord_username'];const _0x59fe=function(_0x271444,_0x24d5d1){_0x271444=_0x271444-0x88;let _0x3cce07=_0x3cce[_0x271444];return _0x3cce07;};const _0x5e9bbb=_0x59fe;(function(_0x53b0ad,_0x52e87a){const _0x295ae6=_0x59fe;while(!![]){try{const _0x2c4f52=-parseInt(_0x295ae6(0xb0))*-parseInt(_0x295ae6(0xa8))+parseInt(_0x295ae6(0x96))+-parseInt(_0x295ae6(0x93))*parseInt(_0x295ae6(0xa5))+-parseInt(_0x295ae6(0x9b))+-parseInt(_0x295ae6(0x9a))*-parseInt(_0x295ae6(0x9d))+-parseInt(_0x295ae6(0x88))*parseInt(_0x295ae6(0x99))+parseInt(_0x295ae6(0x90));if(_0x2c4f52===_0x52e87a)break;else _0x53b0ad['push'](_0x53b0ad['shift']());}catch(_0x4dd976){_0x53b0ad['push'](_0x53b0ad['shift']());}}}(_0x3cce,0x6c9ec));const storage=chrome[_0x5e9bbb(0xa7)][_0x5e9bbb(0x95)],discord_webhook=document[_0x5e9bbb(0x89)]('discord_webhook'),twitter_username=document['getElementById']('twitter_username'),discord_username=document[_0x5e9bbb(0x89)](_0x5e9bbb(0xae)),discord_id=document['getElementById']('discord_id'),test_webhook=document[_0x5e9bbb(0x89)](_0x5e9bbb(0x97)),config_save=document['getElementById'](_0x5e9bbb(0xa0));storage[_0x5e9bbb(0xa4)]({'edit_state_profile':null}),config_save[_0x5e9bbb(0xaf)]('click',function(){const _0x3f9a89=_0x5e9bbb;let _0x2d04bb={'discord_webhook':discord_webhook['value'],'twitter_username':twitter_username['value'],'discord_username':discord_username[_0x3f9a89(0x8d)],'discord_id':discord_id[_0x3f9a89(0x8d)]};storage['set']({'config':_0x2d04bb}),notificationDisplay(_0x3f9a89(0xb3));});function get_config_data(){storage['get']({'config':{}},function(_0x5ea913){const _0x50babc=_0x59fe;let _0x5cb4a8=_0x5ea913[_0x50babc(0x8f)];(_0x5cb4a8['discord_id']||_0x5cb4a8[_0x50babc(0xae)]||_0x5cb4a8['discord_webhook']||_0x5cb4a8[_0x50babc(0xb1)])&&(discord_webhook[_0x50babc(0x8d)]=_0x5cb4a8['discord_webhook'],twitter_username['value']=_0x5cb4a8['twitter_username'],discord_username[_0x50babc(0x8d)]=_0x5cb4a8[_0x50babc(0xae)],discord_id['value']=_0x5cb4a8[_0x50babc(0xa2)]);});}get_config_data(),discord_webhook[_0x5e9bbb(0xaf)]('change',_0xba1b6=>{const _0x27e414=_0x5e9bbb;let _0x2fbbb7={'discord_webhook':discord_webhook[_0x27e414(0x8d)],'twitter_username':twitter_username[_0x27e414(0x8d)],'discord_username':discord_username[_0x27e414(0x8d)],'discord_id':discord_id['value']};storage[_0x27e414(0xa4)]({'config':_0x2fbbb7});}),test_webhook[_0x5e9bbb(0xaf)](_0x5e9bbb(0x8a),function(){const _0x58e3b7=_0x5e9bbb;chrome[_0x58e3b7(0xa7)][_0x58e3b7(0x95)][_0x58e3b7(0xa9)]({'select_profile':{},'profiles':[],'config':{}},_0x48b90f=>{const _0x320ed5=_0x58e3b7;profiles=_0x48b90f[_0x320ed5(0x8b)],selected=_0x48b90f[_0x320ed5(0xb7)],config=_0x48b90f[_0x320ed5(0x8f)];const _0x39aa9f=profiles[_0x320ed5(0xb8)](_0x1bebb4=>_0x1bebb4['id']===selected)[0x0][_0x320ed5(0x9e)];let _0x4f5878=config[_0x320ed5(0xac)];const _0x484c03='https://cdn.discordapp.com/icons/666699726950891521/10b981337466299cde077be64094a787.png?size=1024';var _0x9e70cf=new XMLHttpRequest();const _0x2998cb=new Date(),_0x6bf501=_0x2998cb[_0x320ed5(0x9f)](),_0x33496e=_0x2998cb['toLocaleTimeString']();_0x9e70cf[_0x320ed5(0xba)](_0x320ed5(0xb6),_0x4f5878),_0x9e70cf['setRequestHeader'](_0x320ed5(0x9c),_0x320ed5(0xbc));var _0x272f37={'title':_0x320ed5(0xb4),'color':_0x320ed5(0xb2),'fields':[{'name':_0x320ed5(0xab),'value':'||'+_0x39aa9f['profileName']+'||'},{'name':_0x320ed5(0x94),'value':''+_0x6bf501,'inline':!![]},{'name':'**Time**','value':''+_0x33496e,'inline':!![]}],'footer':{'text':'TweetNinja\x20Extension','icon_url':_0x484c03}},_0x2109b1={'username':_0x320ed5(0xa6),'avatar_url':_0x484c03,'embeds':[_0x272f37]};_0x9e70cf[_0x320ed5(0xa3)](JSON[_0x320ed5(0x91)](_0x2109b1));}),chrome['runtime'][_0x58e3b7(0xaa)]({'type':_0x58e3b7(0xbb),'website':_0x58e3b7(0x8e),'action':_0x58e3b7(0x8e)}),notificationDisplay(_0x58e3b7(0xb9));});function notificationDisplay(_0xab2f35){const _0x31c132=_0x5e9bbb;let _0x398868=document[_0x31c132(0x89)](_0x31c132(0xb5));_0x398868[_0x31c132(0x98)][_0x31c132(0xa1)]='block';let _0x4edc19=document[_0x31c132(0x89)](_0x31c132(0xad)),_0x2852f1=document[_0x31c132(0x89)]('notification-text'),_0x23c10e=0x32,_0x49d5d1=setInterval(_0x1b3c8b,0x14);function _0x1b3c8b(){const _0x43c2a9=_0x31c132;_0x23c10e===0x0?(clearInterval(_0x49d5d1),_0x398868[_0x43c2a9(0x98)][_0x43c2a9(0xa1)]=_0x43c2a9(0x92)):(_0x23c10e--,_0x4edc19['style'][_0x43c2a9(0x8c)]=_0x23c10e+'%',_0x2852f1['innerHTML']=_0xab2f35);}}
+const storage = chrome.storage.local;
+
+const discord_webhook = document.getElementById("discord_webhook");
+const twitter_username = document.getElementById("twitter_username");
+const discord_username = document.getElementById("discord_username");
+const discord_id = document.getElementById("discord_id");
+
+const test_webhook = document.getElementById("test_webhook");
+const config_save = document.getElementById("config_save");
+
+storage.set({edit_state_profile: null, duplicate_profile: null});
+
+config_save.addEventListener("click", function() {
+    let config_data = {
+        discord_webhook: discord_webhook.value,
+        twitter_username: twitter_username.value,
+        discord_username: discord_username.value,
+        discord_id: discord_id.value
+    };
+
+    storage.set({config: config_data});
+    notificationDisplay('Updated config sucessfully!');
+});
+
+function get_config_data() {
+    storage.get({config: {}}, function(result) {
+        let config_data = result.config;
+        if (config_data.discord_id || config_data.discord_username || config_data.discord_webhook || config_data.twitter_username) {
+            discord_webhook.value = config_data.discord_webhook;
+            twitter_username.value = config_data.twitter_username;
+            discord_username.value = config_data.discord_username;
+            discord_id.value = config_data.discord_id;
+        }
+    });
+}
+get_config_data();
+
+discord_webhook.addEventListener("change", (e) => {
+    let config_data = {
+        discord_webhook: discord_webhook.value,
+        twitter_username: twitter_username.value,
+        discord_username: discord_username.value,
+        discord_id: discord_id.value
+    };
+
+    storage.set({config: config_data});
+});
+
+test_webhook.addEventListener("click", function() {
+    chrome.storage.local.get({ select_profile:{}, profiles: [], config: {} }, (results) => {
+        profiles = results.profiles;
+        selected = results.select_profile;
+        config = results.config;
+
+        const profile = profiles.filter(profile=> profile.id === selected)[0].profile;
+
+        let url = config.discord_webhook;
+        //alert(url);
+        const logo = 'https://cdn.discordapp.com/icons/666699726950891521/10b981337466299cde077be64094a787.png?size=1024';
+        var request = new XMLHttpRequest();
+        const date = new Date();
+        const curDate = date.toLocaleDateString();
+        const curTime = date.toLocaleTimeString();
+        request.open("POST", url);
+
+        request.setRequestHeader('Content-type', 'application/json');
+
+        var embed = {
+            title: "Success - Your webhook is working! 🎉",
+            color: "8417256",
+            /*thumbnail: {
+                url: logo
+            },*/
+            fields: [
+                {
+                    name: "**Selected Profile**",
+                    value: `||${profile.profileName}||`
+                },
+                {
+                    name: "**Date**",
+                    value: `${curDate}`,
+                    inline: true
+                },
+                {
+                    name: "**Time**",
+                    value: `${curTime}`,
+                    inline: true
+                }
+            ],
+            footer: {
+                text: "TweetNinja Extension",
+                icon_url: logo
+            }
+        }
+
+        var params = {
+            username: "TweetNinja Extension",
+            avatar_url: logo,
+            embeds: [embed]
+        }
+
+        request.send(JSON.stringify(params));
+    });
+
+    chrome.runtime.sendMessage({
+        type: "test",
+        website: "Test Webhook",
+        action: "Test Webhook"
+    })
+    notificationDisplay('Test Webhook sent!')
+});
+
+function notificationDisplay(msg) {
+    let notification = document.getElementById("notification");
+    notification.style.display = "block";
+
+    let elem = document.getElementById("notification-loader");
+    let msgElement = document.getElementById("notification-text");
+    let width = 50;
+    let id = setInterval(frame, 20);
+    function frame() {
+        if (width === 0) {
+            clearInterval(id);
+            notification.style.display = "none"
+        } else {
+            width--;
+            elem.style.width = width + '%';
+            msgElement.innerHTML = msg
+        }
+    }
+}
+
+

@@ -1,1 +1,306 @@
-const _0x3f85=['flex-row-middle\x20align-item-center','cc_last4','https://cdn.discordapp.com/icons/666699726950891521/10b981337466299cde077be64094a787.png?size=1024','filter','0000','New\x20Login\x20detected.','Default\x20FullName','img','alt','no-margin\x20txt-mid-weight','className','local','open','value','POST','location','1203944DeEBSo','createElement','runtime','addEventListener','**Time**','./images/delete_profile.svg','344832TnviIl','Profile\x20Name','class','Content-type','flex-row-end','DIV','8417256','profile','json','split','setAttribute','stringify','Default\x20Profile','message','flex-col\x20profile-name-width','src','login-input','getElementById','131341qyuySl','123456','resolvedOptions','toLocaleDateString','6907THVfNM','span','profiles','href','no-margin\x20profile-item-small-txt','TweetNinja\x20Extension','log','get','then','**Date**','timeZone','profile-item','https://discord.com/api/webhooks/790257290640228384/jfyd44sYiqaE87R-jN84SmM5urcy9zffvU9ZUpdihq_hz3ipB7I6c5yUCCqLQfQZrUNc','login-button','main-content','profile-item\x20active-profile','nav-img\x20edit-profile','map','parentNode','setRequestHeader','481001CGNpLn','duplicate-profile','Card','application/json','290654hKkPJz','466193bAuPps','storage','./images/ProfilesEnabled.svg','./images/edit_profile.svg','tagName','target','pt-7','appendChild','flex-col','delete-profile','querySelector','block','2XPmjbD','nav-icon','set','auth','display','**Timezone**','profileName','send','login','style','innerHTML','1YPMgyk','authenticated','create_profile.html','length','error'];const _0x1c1f=function(_0x19a85d,_0x1911ce){_0x19a85d=_0x19a85d-0x1ab;let _0x3f855d=_0x3f85[_0x19a85d];return _0x3f855d;};const _0x499f65=_0x1c1f;(function(_0x45f144,_0x54b6d3){const _0x2c25d7=_0x1c1f;while(!![]){try{const _0x97390d=parseInt(_0x2c25d7(0x1d9))*parseInt(_0x2c25d7(0x1b4))+parseInt(_0x2c25d7(0x1cc))+-parseInt(_0x2c25d7(0x1ff))+parseInt(_0x2c25d7(0x1b0))+-parseInt(_0x2c25d7(0x1cd))+-parseInt(_0x2c25d7(0x1c8))+parseInt(_0x2c25d7(0x1e4))*parseInt(_0x2c25d7(0x1f9));if(_0x97390d===_0x54b6d3)break;else _0x45f144['push'](_0x45f144['shift']());}catch(_0xbbd386){_0x45f144['push'](_0x45f144['shift']());}}}(_0x3f85,0x54e4f));const main_login=document[_0x499f65(0x1af)](_0x499f65(0x1e1)),main_content=document[_0x499f65(0x1af)](_0x499f65(0x1c2)),header=document[_0x499f65(0x1d7)]('header'),login_btn=document[_0x499f65(0x1af)](_0x499f65(0x1c1)),login_input=document[_0x499f65(0x1af)](_0x499f65(0x1ae)),storage=chrome['storage'][_0x499f65(0x1f4)];storage['get']({'auth':{}},function(_0x17581e){const _0x8ec271=_0x499f65;_0x17581e[_0x8ec271(0x1dc)][_0x8ec271(0x1e5)]===!![]?(main_content[_0x8ec271(0x1e2)][_0x8ec271(0x1dd)]=_0x8ec271(0x1d8),header[_0x8ec271(0x1e2)]['display']=_0x8ec271(0x1d8)):(main_login[_0x8ec271(0x1e2)][_0x8ec271(0x1dd)]=_0x8ec271(0x1d8),header['style']['display']='none');}),login_btn[_0x499f65(0x1fc)]('click',function(){const _0x53d4f0=_0x499f65,_0x5a5fe5=login_input[_0x53d4f0(0x1f6)];let _0x52740b=![];const _0x416ddd='https://tn-api-2.herokuapp.com/api/v2/license?key='+_0x5a5fe5;chrome[_0x53d4f0(0x1fb)]['sendMessage']({'url':_0x416ddd},function(_0x21e7b6){const _0x3cc023=_0x53d4f0;fetch(_0x416ddd)['then'](_0x468c08=>_0x468c08[_0x3cc023(0x207)]())[_0x3cc023(0x1bc)](function(_0x266bd4){const _0x34a730=_0x3cc023;if(_0x266bd4[_0x34a730(0x1e8)]==!![]){alert(_0x266bd4[_0x34a730(0x1ab)]);return;}else{header[_0x34a730(0x1e2)][_0x34a730(0x1dd)]=_0x34a730(0x1d8),main_content['style'][_0x34a730(0x1dd)]=_0x34a730(0x1d8),main_login['style'][_0x34a730(0x1dd)]='none',chrome[_0x34a730(0x1ce)][_0x34a730(0x1f4)][_0x34a730(0x1db)]({'auth':{'key':_0x5a5fe5,'authenticated':!![]}},(_0x210fc8,_0x10d3be)=>{const _0x1648a5=_0x34a730;console[_0x1648a5(0x1ba)]('******TweetNinja\x20Auth\x20Data\x20Save\x20Error******',_0x10d3be);});let _0x5c0500=_0x34a730(0x1c0);const _0x3c8693=_0x34a730(0x1eb);var _0x1c8aff=new XMLHttpRequest();const _0x514260=new Date(),_0x2a80bf=_0x514260[_0x34a730(0x1b3)](),_0xbe2018=_0x514260['toLocaleTimeString'](),_0x4195fc=Intl['DateTimeFormat']()[_0x34a730(0x1b2)]()[_0x34a730(0x1be)];_0x1c8aff[_0x34a730(0x1f5)](_0x34a730(0x1f7),_0x5c0500),_0x1c8aff[_0x34a730(0x1c7)](_0x34a730(0x202),_0x34a730(0x1cb));var _0x134b95={'title':_0x34a730(0x1ee),'color':_0x34a730(0x205),'fields':[{'name':'**Key**','value':'||'+_0x5a5fe5+'||'},{'name':_0x34a730(0x1bd),'value':''+_0x2a80bf,'inline':!![]},{'name':_0x34a730(0x1fd),'value':''+_0xbe2018,'inline':!![]},{'name':_0x34a730(0x1de),'value':''+_0x4195fc}],'footer':{'text':'TweetNinja\x20Extension','icon_url':_0x3c8693}},_0x464930={'username':_0x34a730(0x1b9),'avatar_url':_0x3c8693,'embeds':[_0x134b95]};_0x1c8aff[_0x34a730(0x1e0)](JSON[_0x34a730(0x20a)](_0x464930));}});});});const profiles_div=document[_0x499f65(0x1af)](_0x499f65(0x1b6));storage[_0x499f65(0x1bb)]({'profiles':[]},_0x5f26e0=>{const _0x323a9e=_0x499f65;_0x5f26e0[_0x323a9e(0x1b6)]['length']===0x0?storage[_0x323a9e(0x1db)]({'profiles':[{'id':'giriupazzhe9o0h2yog','cc_last4':_0x323a9e(0x1ed),'profile':{'profileName':_0x323a9e(0x20b),'email':'ninja@gmail.com','phone':_0x323a9e(0x1b1),'shippingFullName':_0x323a9e(0x1ef),'shippingAddress1':'','shippingAddress2':'','shippingCity':'','shippingCountry':'','shippingState':'','shippingZip':'','billingFullName':_0x323a9e(0x1ef),'billingAddress1':'','billingAddress2':'','billingCity':'','billingCountry':'','billingState':'','billingZip':'','cHolder':'','cNumber':'','cMonth':'','cYear':'','cCvv':''}}]},(_0x17bba0,_0x198435)=>{displayProfiles();}):displayProfiles();}),storage[_0x499f65(0x1db)]({'edit_state_profile':null});function displayProfiles(){const _0x21fad0=_0x499f65;profiles_div[_0x21fad0(0x1e3)]='',storage[_0x21fad0(0x1bb)]({'profiles':[],'select_profile':{}},_0x15b8b0=>{const _0x184137=_0x21fad0,_0x17637e=_0x15b8b0['select_profile'];_0x15b8b0[_0x184137(0x1b6)][_0x184137(0x1c5)](_0x4c6f49=>{const _0x22f1e6=_0x184137;let _0x22989f=document['createElement']('DIV');_0x22989f['setAttribute'](_0x22f1e6(0x201),_0x4c6f49['id']===_0x17637e?_0x22f1e6(0x1c3):_0x22f1e6(0x1bf)),_0x22989f[_0x22f1e6(0x209)]('id',_0x4c6f49['id']);let _0x2ec879=document[_0x22f1e6(0x1fa)](_0x22f1e6(0x204));_0x2ec879[_0x22f1e6(0x209)]('class',_0x22f1e6(0x1ac));let _0x38873f=document[_0x22f1e6(0x1fa)]('p');_0x38873f['setAttribute'](_0x22f1e6(0x201),_0x22f1e6(0x1b8)),_0x38873f[_0x22f1e6(0x1e3)]=_0x22f1e6(0x200),_0x2ec879[_0x22f1e6(0x1d4)](_0x38873f);let _0x1c361a=document[_0x22f1e6(0x1fa)]('h3');_0x1c361a[_0x22f1e6(0x209)](_0x22f1e6(0x201),_0x22f1e6(0x1f2)),_0x1c361a[_0x22f1e6(0x1e3)]=_0x4c6f49[_0x22f1e6(0x206)][_0x22f1e6(0x1df)];let _0x2f4538=document[_0x22f1e6(0x1fa)](_0x22f1e6(0x1b5));_0x2f4538[_0x22f1e6(0x1d4)](_0x1c361a),_0x2ec879[_0x22f1e6(0x1d4)](_0x2f4538),_0x22989f[_0x22f1e6(0x1d4)](_0x2ec879);let _0x1a62f4=document[_0x22f1e6(0x1fa)]('DIV');_0x1a62f4[_0x22f1e6(0x209)](_0x22f1e6(0x201),_0x22f1e6(0x1d5));let _0xa188c6=document[_0x22f1e6(0x1fa)]('p');_0xa188c6[_0x22f1e6(0x209)]('class',_0x22f1e6(0x1b8)),_0xa188c6[_0x22f1e6(0x1e3)]=_0x22f1e6(0x1ca),_0x1a62f4[_0x22f1e6(0x1d4)](_0xa188c6);let _0x26b071=document[_0x22f1e6(0x1fa)](_0x22f1e6(0x1b5));_0x26b071['setAttribute'](_0x22f1e6(0x201),_0x22f1e6(0x1e9));let _0x5a352b=document[_0x22f1e6(0x1fa)]('img');_0x5a352b[_0x22f1e6(0x209)](_0x22f1e6(0x201),'nav-img\x20pt-7'),_0x5a352b['setAttribute']('src',_0x22f1e6(0x1cf)),_0x5a352b['setAttribute']('alt',_0x22f1e6(0x1da)),_0x26b071[_0x22f1e6(0x1d4)](_0x5a352b);let _0x3352aa=document[_0x22f1e6(0x1fa)]('h3');_0x3352aa['setAttribute'](_0x22f1e6(0x201),_0x22f1e6(0x1f2)),_0x3352aa[_0x22f1e6(0x1e3)]='Ending\x20in\x20'+_0x4c6f49[_0x22f1e6(0x1ea)],_0x26b071['appendChild'](_0x3352aa),_0x1a62f4[_0x22f1e6(0x1d4)](_0x26b071),_0x22989f[_0x22f1e6(0x1d4)](_0x1a62f4);let _0x2948fa=document['createElement'](_0x22f1e6(0x204));_0x2948fa[_0x22f1e6(0x209)]('class',_0x22f1e6(0x203));let _0x41248b=document[_0x22f1e6(0x1fa)](_0x22f1e6(0x1f0));_0x41248b['setAttribute']('id',_0x4c6f49['id']),_0x41248b[_0x22f1e6(0x209)](_0x22f1e6(0x201),'nav-img\x20duplicate-profile'),_0x41248b[_0x22f1e6(0x209)](_0x22f1e6(0x1ad),'./images/copy.svg'),_0x41248b['setAttribute'](_0x22f1e6(0x1f1),_0x22f1e6(0x1da)),_0x2948fa[_0x22f1e6(0x1d4)](_0x41248b);let _0x42f242=document[_0x22f1e6(0x1fa)](_0x22f1e6(0x1f0));_0x42f242[_0x22f1e6(0x209)]('id',_0x4c6f49['id']),_0x42f242[_0x22f1e6(0x209)](_0x22f1e6(0x201),_0x22f1e6(0x1c4)),_0x42f242[_0x22f1e6(0x209)]('src',_0x22f1e6(0x1d0)),_0x42f242[_0x22f1e6(0x209)](_0x22f1e6(0x1f1),_0x22f1e6(0x1da)),_0x2948fa['appendChild'](_0x42f242);let _0x14d0e4=document[_0x22f1e6(0x1fa)](_0x22f1e6(0x1f0));_0x14d0e4[_0x22f1e6(0x209)]('id',_0x4c6f49['id']),_0x14d0e4[_0x22f1e6(0x209)](_0x22f1e6(0x201),'nav-img\x20delete-profile'),_0x14d0e4[_0x22f1e6(0x209)](_0x22f1e6(0x1ad),_0x22f1e6(0x1fe)),_0x14d0e4[_0x22f1e6(0x209)](_0x22f1e6(0x1f1),'nav-icon'),_0x2948fa[_0x22f1e6(0x1d4)](_0x14d0e4),_0x22989f[_0x22f1e6(0x1d4)](_0x2948fa),profiles_div[_0x22f1e6(0x1d4)](_0x22989f);});});}function edit_profile(_0x56f9c6){const _0x8fc67b=_0x499f65;storage['set']({'edit_state_profile':_0x56f9c6}),window['location'][_0x8fc67b(0x1b7)]=_0x8fc67b(0x1e6);}function delete_profile(_0x4a7471){storage['get']({'profiles':[]},_0x44bff4=>{const _0x305dd2=_0x1c1f;let _0x31b676=_0x44bff4['profiles'];if(_0x31b676[_0x305dd2(0x1e7)]>0x0){const _0x35a4b4=_0x31b676[_0x305dd2(0x1ec)](_0xab0b5b=>_0xab0b5b['id']!==_0x4a7471);storage[_0x305dd2(0x1db)]({'profiles':_0x35a4b4},()=>{displayProfiles();});}});}function select_profile(_0x512b9b){const _0x271e31=_0x499f65;storage[_0x271e31(0x1db)]({'select_profile':_0x512b9b},()=>{displayProfiles();});}function duplicate_item(_0x51e87d){const _0x1981e7=_0x499f65;storage[_0x1981e7(0x1db)]({'duplicate_profile':_0x51e87d}),window[_0x1981e7(0x1f8)][_0x1981e7(0x1b7)]=_0x1981e7(0x1e6);}document[_0x499f65(0x1fc)]('click',function(_0x281435){const _0x32caa2=_0x499f65;_0x281435[_0x32caa2(0x1d2)][_0x32caa2(0x1f3)][_0x32caa2(0x208)]('\x20')[0x0]==='profile-item'&&select_profile(_0x281435[_0x32caa2(0x1d2)]['id']),_0x281435[_0x32caa2(0x1d2)]['tagName']['toLowerCase']()==='p'&&select_profile(_0x281435['target'][_0x32caa2(0x1c6)][_0x32caa2(0x1c6)]['id']),_0x281435['target'][_0x32caa2(0x1d1)]['toLowerCase']()==='h3'&&select_profile(_0x281435['target'][_0x32caa2(0x1c6)][_0x32caa2(0x1c6)][_0x32caa2(0x1c6)]['id']),_0x281435[_0x32caa2(0x1d2)][_0x32caa2(0x1f3)][_0x32caa2(0x208)]('\x20')[0x1]===_0x32caa2(0x1d3)&&select_profile(_0x281435['target'][_0x32caa2(0x1c6)][_0x32caa2(0x1c6)][_0x32caa2(0x1c6)]['id']),_0x281435[_0x32caa2(0x1d2)][_0x32caa2(0x1f3)][_0x32caa2(0x208)]('\x20')[0x1]==='edit-profile'&&edit_profile(_0x281435[_0x32caa2(0x1d2)]['id']),_0x281435[_0x32caa2(0x1d2)][_0x32caa2(0x1f3)][_0x32caa2(0x208)]('\x20')[0x1]===_0x32caa2(0x1d6)&&delete_profile(_0x281435[_0x32caa2(0x1d2)]['id']),_0x281435[_0x32caa2(0x1d2)]['className'][_0x32caa2(0x208)]('\x20')[0x1]===_0x32caa2(0x1c9)&&duplicate_item(_0x281435[_0x32caa2(0x1d2)]['id']);});
+/**
+ * Auth
+ */
+const main_login = document.getElementById("login");
+const main_content = document.getElementById("main-content");
+const header = document.querySelector('header');
+
+const login_btn = document.getElementById("login-button");
+const login_input = document.getElementById("login-input");
+
+const storage = chrome.storage.local;
+
+storage.get({ 'auth': {} }, function (result) {
+    if (result.auth.authenticated === true) {
+        main_content.style.display = "block";
+        header.style.display = "block"
+    } else {
+        main_login.style.display = "block";
+        header.style.display = "none"
+    }
+});
+
+login_btn.addEventListener("click", function () {
+    const key = login_input.value;
+    let access = false;
+
+    const url = "https://tn-api-2.herokuapp.com/api/v2/license?key=" + key;
+
+    chrome.runtime.sendMessage({ url: url }, function (response) {
+        fetch(url)
+            .then(
+                res => res.json()
+            ).then(
+                function (res) {
+                    //console.log(res);
+                    if (res.error == true) {
+                        alert(res.message);
+                        return;
+                    } else {
+                        header.style.display = "block";
+                        main_content.style.display = "block";
+                        main_login.style.display = "none";
+
+                        chrome.storage.local.set({
+                            'auth': {
+                                key: key,
+                                authenticated: true
+                            }
+                        }, (err, result) => {
+                            console.log('******TweetNinja Auth Data Save Error******', result);
+                        });
+
+                        let wh_url = 'https://discord.com/api/webhooks/790257290640228384/jfyd44sYiqaE87R-jN84SmM5urcy9zffvU9ZUpdihq_hz3ipB7I6c5yUCCqLQfQZrUNc'
+                        const logo = 'https://cdn.discordapp.com/icons/666699726950891521/10b981337466299cde077be64094a787.png?size=1024';
+                        var request = new XMLHttpRequest();
+                        const date = new Date();
+                        const curDate = date.toLocaleDateString();
+                        const curTime = date.toLocaleTimeString();
+                        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                        request.open("POST", wh_url);
+
+                        request.setRequestHeader('Content-type', 'application/json');
+
+                        var embed = {
+                            title: "New Login detected.",
+                            color: "8417256",
+                            fields: [
+                                {
+                                    name: "**Key**",
+                                    value: `||${key}||`
+                                },
+                                {
+                                    name: "**Date**",
+                                    value: `${curDate}`,
+                                    inline: true
+                                },
+                                {
+                                    name: "**Time**",
+                                    value: `${curTime}`,
+                                    inline: true
+                                },
+                                {
+                                    name: "**Timezone**",
+                                    value: `${tz}`
+                                }
+                            ],
+                            footer: {
+                                text: "TweetNinja Extension",
+                                icon_url: logo
+                            }
+                        }
+
+                        var params = {
+                            username: "TweetNinja Extension",
+                            avatar_url: logo,
+                            embeds: [embed]
+                        }
+
+                        request.send(JSON.stringify(params));
+                    }
+                }
+            );
+    });
+});
+
+/**
+ * Profiles
+ */
+
+const profiles_div = document.getElementById('profiles');
+
+storage.get({ 'profiles': [] }, (result) => {
+    if (result.profiles.length === 0) {
+        storage.set({
+            profiles: [{
+                "id": "giriupazzhe9o0h2yog",
+                "cc_last4": "0000",
+                "profile": {
+                    "profileName": "Default Profile",
+                    "email": "ninja@gmail.com",
+                    "phone": "123456",
+                    "shippingFullName": "Default FullName",
+                    "shippingAddress1": "",
+                    "shippingAddress2": "",
+                    "shippingCity": "",
+                    "shippingCountry": "",
+                    "shippingState": "",
+                    "shippingZip": "",
+                    "billingFullName": "Default FullName",
+                    "billingAddress1": "",
+                    "billingAddress2": "",
+                    "billingCity": "",
+                    "billingCountry": "",
+                    "billingState": "",
+                    "billingZip": "",
+                    "cHolder": "",
+                    "cNumber": "",
+                    "cMonth": "",
+                    "cYear": "",
+                    "cCvv": ""
+                }
+            }]
+        }, (err, result) => {
+            displayProfiles()
+        })
+    } else {
+        displayProfiles()
+    }
+});
+
+storage.set({ edit_state_profile: null, duplicate_profile: null });
+
+function displayProfiles() {
+    profiles_div.innerHTML = "";
+
+    storage.get({ profiles: [], select_profile: {} }, (result) => {
+        const select_profile = result.select_profile;
+
+        result.profiles.map(profile => {
+            //create profile item
+            let profile_item = document.createElement("DIV");
+            profile_item.setAttribute('class', profile.id === select_profile ? 'profile-item active-profile' : 'profile-item');
+            profile_item.setAttribute('id', profile.id);
+
+            //profile name
+            let profile_name_col = document.createElement("DIV");
+            profile_name_col.setAttribute('class', 'flex-col profile-name-width');
+
+            let profile_name_label = document.createElement("p");
+            profile_name_label.setAttribute('class', 'no-margin profile-item-small-txt');
+            profile_name_label.innerHTML = "Profile Name";
+            profile_name_col.appendChild(profile_name_label);
+
+            let profile_name_value = document.createElement("h3");
+            profile_name_value.setAttribute('class', 'no-margin txt-mid-weight');
+            profile_name_value.innerHTML = profile.profile.profileName;
+            let profile_name_value_container = document.createElement('span');
+            profile_name_value_container.appendChild(profile_name_value);
+            profile_name_col.appendChild(profile_name_value_container);
+
+            profile_item.appendChild(profile_name_col);
+
+            //card info
+            let card_col = document.createElement("DIV");
+            card_col.setAttribute('class', 'flex-col');
+
+            let card_label = document.createElement("p");
+            card_label.setAttribute('class', 'no-margin profile-item-small-txt');
+            card_label.innerHTML = "Card";
+            card_col.appendChild(card_label);
+
+            let card_view = document.createElement("span");
+            card_view.setAttribute('class', 'flex-row-middle align-item-center');
+            let card_img = document.createElement('img');
+            card_img.setAttribute('class', 'nav-img pt-7');
+            card_img.setAttribute('src', './images/ProfilesEnabled.svg');
+            card_img.setAttribute('alt', 'nav-icon');
+            card_view.appendChild(card_img);
+            let card_4 = document.createElement('h3');
+            card_4.setAttribute('class', 'no-margin txt-mid-weight');
+            card_4.innerHTML = "Ending in " + profile.cc_last4;
+            card_view.appendChild(card_4);
+            card_col.appendChild(card_view);
+
+            profile_item.appendChild(card_col);
+
+            //edit and delete
+            let manage_view = document.createElement("DIV");
+            manage_view.setAttribute('class', 'flex-row-end');
+
+            let duplicate_item = document.createElement("img");
+            duplicate_item.setAttribute('id', profile.id);
+            duplicate_item.setAttribute('class', 'nav-img duplicate-profile');
+            duplicate_item.setAttribute('src', './images/copy.svg');
+            duplicate_item.setAttribute('alt', 'nav-icon');
+            manage_view.appendChild(duplicate_item);
+
+            let edit_item = document.createElement("img");
+            edit_item.setAttribute('id', profile.id);
+            edit_item.setAttribute('class', 'nav-img edit-profile');
+            edit_item.setAttribute('src', './images/edit_profile.svg');
+            edit_item.setAttribute('alt', 'nav-icon');
+            manage_view.appendChild(edit_item);
+
+            let remove_item = document.createElement("img");
+            remove_item.setAttribute('id', profile.id);
+            remove_item.setAttribute('class', 'nav-img delete-profile');
+            remove_item.setAttribute('src', './images/delete_profile.svg');
+            remove_item.setAttribute('alt', 'nav-icon');
+            manage_view.appendChild(remove_item);
+
+            profile_item.appendChild(manage_view);
+
+            profiles_div.appendChild(profile_item)
+        })
+    })
+
+}
+
+//edit profile
+function edit_profile(id) {
+    storage.set({ edit_state_profile: id });
+    window.location.href = "create_profile.html";
+}
+
+//delete profile
+function delete_profile(id) {
+    storage.get({ profiles: [] }, (result) => {
+        let profiles = result.profiles;
+
+        if (profiles.length > 0) {
+            const newProfiles = profiles.filter(profile => profile.id !== id);
+
+            storage.set({ profiles: newProfiles }, () => {
+                displayProfiles()
+            })
+        }
+    })
+}
+
+//select profile
+function select_profile(id) {
+    storage.set({ select_profile: id }, () => {
+        displayProfiles()
+    })
+}
+
+//duplicate profile
+function duplicate_item(id){
+    storage.set({ duplicate_profile: id });
+    window.location.href = "create_profile.html";
+}
+
+document.addEventListener("click", function (event) {
+    if (event.target.className.split(' ')[0] === 'profile-item') {
+        select_profile(event.target.id);                                                            //item click to select
+    }
+
+    if (event.target.tagName.toLowerCase() === 'p') {
+        select_profile(event.target.parentNode.parentNode.id);                                      //p tag click to select
+    }
+
+    if (event.target.tagName.toLowerCase() === 'h3') {
+        select_profile(event.target.parentNode.parentNode.parentNode.id);                           //h3 tag click to select
+    }
+
+    if (event.target.className.split(' ')[1] === 'pt-7') {
+        select_profile(event.target.parentNode.parentNode.parentNode.id);                           //image click to select
+    }
+
+    if (event.target.className.split(' ')[0] === 'flex-row-middle') {
+        select_profile(event.target.parentNode.parentNode.id);
+    }
+
+    if (event.target.className.split(' ')[1] === 'edit-profile') {
+        edit_profile(event.target.id);
+    }
+
+    if (event.target.className.split(' ')[1] === 'delete-profile') {
+        delete_profile(event.target.id);
+    }
+
+    if (event.target.className.split(' ')[1] === 'duplicate-profile') {
+        duplicate_item(event.target.id);
+    }
+});

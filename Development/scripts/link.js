@@ -1,1 +1,34 @@
-const _0x1b47=['authenticated','hasFocus','link_config','link_state','profile','onload','1458555pXhkgU','63131OfBuRg','profiles','filter','openURL','readText','link_site_url','sendMessage','clipboard','auth','2641489iEkXJo','select_profile','557887VQQqhL','583137FgjOZE','1xfwOig','local','318110bxtELF','settings','447983OLVBou'];const _0x56f4=function(_0x2a828e,_0xead7df){_0x2a828e=_0x2a828e-0xf8;let _0x1b47d0=_0x1b47[_0x2a828e];return _0x1b47d0;};const _0x369f83=_0x56f4;(function(_0x1afce3,_0x482d59){const _0x4d10a2=_0x56f4;while(!![]){try{const _0x4a2c3c=-parseInt(_0x4d10a2(0x109))+parseInt(_0x4d10a2(0xfe))*parseInt(_0x4d10a2(0x102))+-parseInt(_0x4d10a2(0xfd))+-parseInt(_0x4d10a2(0xfc))+parseInt(_0x4d10a2(0x100))+-parseInt(_0x4d10a2(0x10a))+parseInt(_0x4d10a2(0xfa));if(_0x4a2c3c===_0x482d59)break;else _0x1afce3['push'](_0x1afce3['shift']());}catch(_0x184c90){_0x1afce3['push'](_0x1afce3['shift']());}}}(_0x1b47,0xb5da8),window[_0x369f83(0x108)]=function(){const _0x2e70e7=_0x369f83;chrome['storage'][_0x2e70e7(0xff)]['get']({'select_profile':{},'profiles':[],'auth':{},'settings':{},'link_config':{}},async _0x466160=>{const _0x371c84=_0x2e70e7;settings=_0x466160[_0x371c84(0x101)],auth=_0x466160[_0x371c84(0xf9)][_0x371c84(0x103)],profiles=_0x466160[_0x371c84(0x10b)],selected=_0x466160[_0x371c84(0xfb)],link=_0x466160[_0x371c84(0x105)];const _0x4f33fe=profiles[_0x371c84(0x10c)](_0x32057c=>_0x32057c['id']===selected)[0x0][_0x371c84(0x107)];if(auth!=!![])return;if(link[_0x371c84(0x106)]=='On'){let _0x426eb1=link[_0x371c84(0x10f)],_0x3fcf2d='';while(_0x3fcf2d==''){_0x3fcf2d=await getClipboard();}let _0x5ec325=_0x426eb1+_0x3fcf2d;document[_0x371c84(0x104)]()&&chrome['runtime'][_0x371c84(0x110)]({'action':_0x371c84(0x10d),'url':_0x5ec325});}});});async function getClipboard(){const _0x347a0f=_0x369f83;let _0x1575a1,_0x2f3ab8=await navigator[_0x347a0f(0xf8)][_0x347a0f(0x10e)]();return _0x2f3ab8;}
+window.addEventListener('load', () => {
+    chrome.storage.local.get({ auth: {}, settings: {}, link_config: {} }, async (results) => {
+        const settings = results.settings;
+        const auth = results.auth.authenticated;
+        const link = results.link_config;
+
+        if (auth != true) return;
+
+        if (settings.link_appender) {
+            let base_link = link.link_site_url;
+            runLinkAppender(base_link);
+            // runDesktopCopy(base_link);                                   //TODO none completed for copy event for desktop anywhere
+        }
+    });
+});
+
+async function runLinkAppender(base_url) {
+    window.addEventListener('copy', event => {
+        const url = base_url + event.target.textContent;
+        openUrl(url);
+    });
+}
+
+async function runDesktopCopy(base_url) {
+    setInterval(async () => {
+        const txt = await navigator.clipboard.readText();
+        const url = base_url + txt;
+        openUrl(url);
+    }, 200);
+}
+
+async function openUrl(url) {
+    chrome.runtime.sendMessage({ action: "openURL", url: url });
+}

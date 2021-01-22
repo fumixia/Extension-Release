@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "TweetNinja Extension",
 	"description": "An extension developed by @TweetNinjaLLC",
-	"version": "3.0.15",
+	"version": "3.0.20",
 	"icons": {
 		"128": "./icons/logo.png"
 	},
@@ -66,7 +66,8 @@
 				"scripts/ducky.js",
 				"scripts/tl_dashboard.js",
 				"scripts/veloaco.js",
-				"scripts/shreyaco.js"
+				"scripts/shreyaco.js",
+				"scripts/toasts.js"
 			],
 			"all_frames": true
 		},
@@ -76,7 +77,8 @@
 				"https://*/purchase*"
 			],
 			"js": [
-				"scripts/metalabs.js"
+				"scripts/metalabs.js",
+				"scripts/toasts.js"
 			],
 			"all_frames": true
 		},
@@ -97,6 +99,17 @@
 			],
 			"js": [
 				"scripts/shopifycart.js"
+			],
+			"all_frames": true
+		},
+		{
+			"matches": [
+				"https://dashboard.carbonmonitors.io/*",
+				"https://checkout.stripe.com/*"
+			],
+			"js": [
+				"scripts/modules/freddy_dashboard.js",
+				"scripts/toasts.js"
 			],
 			"all_frames": true
 		},

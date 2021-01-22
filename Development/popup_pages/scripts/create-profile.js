@@ -1,1 +1,324 @@
-const _0x2c67=['getElementById','card_number','profile_save','disabled','Profile\x20has\x20been\x20updated!','addEventListener','set','billingFullName','phone','block','local','Default\x20Profile','shipping_state','billingCity','click','shippingFullName','billingZip','notification-text','style','1395375ZVnDsE','default','1680354vFpUiS','cYear','cHolder','shippingCity','shipping_address1','billing_fullname','expiry_month','display','notification','value','get','profiles','758612UCnmHv','profile_name','expiry_year','billing_address1','same_as_shipping','shippingCountry','billing_zip','profileName','billingCountry','146wBXgIr','edit_state_profile','checked','4242424242424242','billing_address2','Profile\x20has\x20been\x20created!','shipping_city','749400WZMogb','now','shippingZip','shippingAddress2','cCvv','billingAddress2','filter','billing_state','shipping_fullname','\x20Copy','slice','cMonth','cNumber','billingAddress1','toString','shipping_country','profile','notification-loader','1302351eYRkFh','shippingAddress1','430303SAnxxD','innerHTML','none','32007QWCnBL','email','1EMzgPj','random','shippingState','duplicate_profile'];const _0x1d89=function(_0x4795bc,_0x3d2eac){_0x4795bc=_0x4795bc-0x19e;let _0x2c671f=_0x2c67[_0x4795bc];return _0x2c671f;};const _0x16575c=_0x1d89;(function(_0x3cda66,_0x262a92){const _0x1b86e0=_0x1d89;while(!![]){try{const _0x4d7251=-parseInt(_0x1b86e0(0x1b7))+parseInt(_0x1b86e0(0x1c9))+parseInt(_0x1b86e0(0x1cb))*-parseInt(_0x1b86e0(0x1d0))+-parseInt(_0x1b86e0(0x1e9))+-parseInt(_0x1b86e0(0x1a7))+-parseInt(_0x1b86e0(0x1e7))+parseInt(_0x1b86e0(0x1b0))*parseInt(_0x1b86e0(0x1ce));if(_0x4d7251===_0x262a92)break;else _0x3cda66['push'](_0x3cda66['shift']());}catch(_0x5a6d8){_0x3cda66['push'](_0x3cda66['shift']());}}}(_0x2c67,0xeab31));const profile_name=document[_0x16575c(0x1d4)](_0x16575c(0x1a8)),profile_email=document[_0x16575c(0x1d4)]('profile_email'),profile_phone=document[_0x16575c(0x1d4)]('profile_phone'),shipping_fullname=document[_0x16575c(0x1d4)](_0x16575c(0x1bf)),shipping_address1=document[_0x16575c(0x1d4)](_0x16575c(0x19f)),shipping_address2=document[_0x16575c(0x1d4)]('shipping_address2'),shipping_country=document['getElementById'](_0x16575c(0x1c6)),shipping_state=document['getElementById'](_0x16575c(0x1e0)),shipping_city=document[_0x16575c(0x1d4)](_0x16575c(0x1b6)),shipping_zip=document[_0x16575c(0x1d4)]('shipping_zip'),billing_fullname=document['getElementById'](_0x16575c(0x1a0)),billing_address1=document['getElementById'](_0x16575c(0x1aa)),billing_address2=document['getElementById'](_0x16575c(0x1b4)),billing_country=document[_0x16575c(0x1d4)]('billing_country'),billing_state=document['getElementById'](_0x16575c(0x1be)),billing_city=document[_0x16575c(0x1d4)]('billing_city'),billing_zip=document['getElementById'](_0x16575c(0x1ad)),card_holder=document['getElementById']('card_holder'),card_number=document[_0x16575c(0x1d4)](_0x16575c(0x1d5)),card_cvv=document[_0x16575c(0x1d4)]('card_cvv'),expiry_month=document[_0x16575c(0x1d4)](_0x16575c(0x1a1)),expiry_year=document[_0x16575c(0x1d4)](_0x16575c(0x1a9)),same_as_shipping=document[_0x16575c(0x1d4)](_0x16575c(0x1ab)),profile_save=document[_0x16575c(0x1d4)](_0x16575c(0x1d6)),storage=chrome['storage'][_0x16575c(0x1de)];profile_save[_0x16575c(0x1d9)](_0x16575c(0x1e2),function(){profileSave();}),same_as_shipping['addEventListener'](_0x16575c(0x1e2),function(){const _0x25e7c3=_0x16575c;same_as_shipping[_0x25e7c3(0x1b2)]?(billing_fullname['value']=shipping_fullname['value'],billing_address1[_0x25e7c3(0x1a4)]=shipping_address1[_0x25e7c3(0x1a4)],billing_address2['value']=shipping_address2[_0x25e7c3(0x1a4)],billing_country['value']=shipping_country[_0x25e7c3(0x1a4)],billing_state['value']=shipping_state[_0x25e7c3(0x1a4)],billing_city['value']=shipping_city['value'],billing_zip[_0x25e7c3(0x1a4)]=shipping_zip[_0x25e7c3(0x1a4)],billing_fullname[_0x25e7c3(0x1d7)]=!![],billing_address1[_0x25e7c3(0x1d7)]=!![],billing_address2['disabled']=!![],billing_country[_0x25e7c3(0x1d7)]=!![],billing_state[_0x25e7c3(0x1d7)]=!![],billing_city['disabled']=!![],billing_zip[_0x25e7c3(0x1d7)]=!![]):(billing_fullname[_0x25e7c3(0x1a4)]='',billing_address1[_0x25e7c3(0x1a4)]='',billing_address2[_0x25e7c3(0x1a4)]='',billing_country[_0x25e7c3(0x1a4)]=_0x25e7c3(0x1e8),billing_state[_0x25e7c3(0x1a4)]=_0x25e7c3(0x1e8),billing_city[_0x25e7c3(0x1a4)]='',billing_zip[_0x25e7c3(0x1a4)]='',billing_fullname[_0x25e7c3(0x1d7)]=![],billing_address1[_0x25e7c3(0x1d7)]=![],billing_address2[_0x25e7c3(0x1d7)]=![],billing_country[_0x25e7c3(0x1d7)]=![],billing_state['disabled']=![],billing_city[_0x25e7c3(0x1d7)]=![],billing_zip[_0x25e7c3(0x1d7)]=![]);});function edit_profile(){const _0x2d6cd6=_0x16575c;storage[_0x2d6cd6(0x1a5)]({'edit_state_profile':'','profiles':[]},function(_0x60a5f8){const _0x4a7385=_0x2d6cd6;let _0x3e52a0=_0x60a5f8[_0x4a7385(0x1b1)],_0x21d3bc=_0x60a5f8[_0x4a7385(0x1a6)][_0x4a7385(0x1bd)](_0x30c4f8=>_0x30c4f8['id']===_0x3e52a0)[0x0];_0x3e52a0&&(profile_name['value']=_0x21d3bc['profile'][_0x4a7385(0x1ae)],profile_email[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1cf)],profile_phone['value']=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1dc)],shipping_fullname[_0x4a7385(0x1a4)]=_0x21d3bc['profile'][_0x4a7385(0x1e3)],shipping_address1[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1ca)],shipping_address2['value']=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1ba)],shipping_country[_0x4a7385(0x1a4)]=_0x21d3bc['profile']['shippingCountry'],shipping_state[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1d2)],shipping_city[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x19e)],shipping_zip[_0x4a7385(0x1a4)]=_0x21d3bc['profile'][_0x4a7385(0x1b9)],billing_fullname['value']=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1db)],billing_address1[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1c4)],billing_address2[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)]['billingAddress2'],billing_country[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1af)],billing_state['value']=_0x21d3bc['profile']['billingState'],billing_city[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1e1)],billing_zip['value']=_0x21d3bc[_0x4a7385(0x1c7)]['billingZip'],card_holder[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)]['cHolder'],card_number['value']=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1c3)],card_cvv[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1bb)],expiry_month[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1c2)],expiry_year[_0x4a7385(0x1a4)]=_0x21d3bc[_0x4a7385(0x1c7)][_0x4a7385(0x1ea)]);});}edit_profile();function profileSave(){const _0x1a3b32=_0x16575c;storage[_0x1a3b32(0x1a5)](_0x1a3b32(0x1b1),function(_0x1fff15){const _0x3ecadf=_0x1a3b32;let _0xff549f=_0x1fff15[_0x3ecadf(0x1b1)];storage[_0x3ecadf(0x1a5)]({'profiles':[],'duplicate_profile':{}},_0x662eb7=>{const _0x1a53f8=_0x3ecadf;let _0x20875d=_0x662eb7[_0x1a53f8(0x1a6)],_0x2c21ea=_0x662eb7[_0x1a53f8(0x1d3)];const _0x24c64b={'id':generateId(),'cc_last4':card_number[_0x1a53f8(0x1a4)]?card_number[_0x1a53f8(0x1a4)][_0x1a53f8(0x1c1)](-0x4):'0000','profile':{'profileName':profile_name['value']?profile_name[_0x1a53f8(0x1a4)]:_0x1a53f8(0x1df),'email':profile_email[_0x1a53f8(0x1a4)],'phone':profile_phone[_0x1a53f8(0x1a4)],'shippingFullName':shipping_fullname[_0x1a53f8(0x1a4)],'shippingAddress1':shipping_address1['value'],'shippingAddress2':shipping_address2[_0x1a53f8(0x1a4)],'shippingCity':shipping_city[_0x1a53f8(0x1a4)],'shippingCountry':shipping_country[_0x1a53f8(0x1a4)],'shippingState':shipping_state[_0x1a53f8(0x1a4)],'shippingZip':shipping_zip[_0x1a53f8(0x1a4)],'billingFullName':billing_fullname[_0x1a53f8(0x1a4)],'billingAddress1':billing_address1['value'],'billingAddress2':billing_address2[_0x1a53f8(0x1a4)],'billingCity':billing_city['value'],'billingCountry':billing_country[_0x1a53f8(0x1a4)],'billingState':billing_state[_0x1a53f8(0x1a4)],'billingZip':billing_zip[_0x1a53f8(0x1a4)],'cHolder':card_holder['value'],'cNumber':card_number[_0x1a53f8(0x1a4)]?card_number[_0x1a53f8(0x1a4)]:_0x1a53f8(0x1b3),'cMonth':expiry_month[_0x1a53f8(0x1a4)],'cYear':expiry_year[_0x1a53f8(0x1a4)],'cCvv':card_cvv[_0x1a53f8(0x1a4)]}};let _0x45d500=_0x20875d['map'](_0x1a34f6=>{return _0x1a34f6['id']===_0xff549f?_0x24c64b:_0x1a34f6;});!_0xff549f&&(_0x45d500=[_0x24c64b]['concat'](_0x20875d)),profile_name['value']='',profile_email['value']='',profile_phone[_0x1a53f8(0x1a4)]='',shipping_fullname[_0x1a53f8(0x1a4)]='',shipping_address1[_0x1a53f8(0x1a4)]='',shipping_address2['value']='',shipping_country[_0x1a53f8(0x1a4)]=_0x1a53f8(0x1e8),shipping_state[_0x1a53f8(0x1a4)]=_0x1a53f8(0x1e8),shipping_city[_0x1a53f8(0x1a4)]='',shipping_zip[_0x1a53f8(0x1a4)]='',billing_fullname[_0x1a53f8(0x1a4)]='',billing_address1[_0x1a53f8(0x1a4)]='',billing_address2[_0x1a53f8(0x1a4)]='',billing_country[_0x1a53f8(0x1a4)]=_0x1a53f8(0x1e8),billing_state[_0x1a53f8(0x1a4)]=_0x1a53f8(0x1e8),billing_city['value']='',billing_zip[_0x1a53f8(0x1a4)]='',card_holder[_0x1a53f8(0x1a4)]='',card_number[_0x1a53f8(0x1a4)]='',card_cvv['value']='',expiry_month[_0x1a53f8(0x1a4)]='',expiry_year[_0x1a53f8(0x1a4)]='',storage[_0x1a53f8(0x1da)]({'profiles':_0x45d500},_0x5a8a55=>{const _0x3e6f8e=_0x1a53f8;if(_0xff549f)notificationDisplay(_0x3e6f8e(0x1d8)),storage[_0x3e6f8e(0x1da)]({'edit_state_profile':null});else _0x2c21ea?(notificationDisplay('Profile\x20has\x20been\x20duplicated!'),storage[_0x3e6f8e(0x1da)]({'duplicate_profile':null})):notificationDisplay(_0x3e6f8e(0x1b5));});});});}function generateId(){const _0x2aa257=_0x16575c;return Date[_0x2aa257(0x1b8)]()[_0x2aa257(0x1c5)](0x24)+Math[_0x2aa257(0x1d1)]()[_0x2aa257(0x1c5)](0x24)['substr'](0x2);}function notificationDisplay(_0x2bd3b6){const _0x34eca1=_0x16575c;let _0x23671b=document['getElementById'](_0x34eca1(0x1a3));_0x23671b[_0x34eca1(0x1e6)][_0x34eca1(0x1a2)]=_0x34eca1(0x1dd);let _0x460abb=document[_0x34eca1(0x1d4)](_0x34eca1(0x1c8)),_0x1a2069=document['getElementById'](_0x34eca1(0x1e5)),_0xcf2ada=0x32,_0x4f6ad2=setInterval(_0xc5d384,0x14);function _0xc5d384(){const _0x264c64=_0x34eca1;_0xcf2ada===0x0?(clearInterval(_0x4f6ad2),_0x23671b[_0x264c64(0x1e6)][_0x264c64(0x1a2)]=_0x264c64(0x1cd)):(_0xcf2ada--,_0x460abb['style']['width']=_0xcf2ada+'%',_0x1a2069[_0x264c64(0x1cc)]=_0x2bd3b6);}}function duplicate_profile(){const _0x262494=_0x16575c;storage[_0x262494(0x1a5)]({'duplicate_profile':'','profiles':[]},function(_0x58ccd0){const _0x5ac1a4=_0x262494;let _0x42a475=_0x58ccd0['duplicate_profile'],_0x11f544=_0x58ccd0['profiles']['filter'](_0x409e41=>_0x409e41['id']===_0x42a475)[0x0];_0x42a475&&(profile_name[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)]['profileName']+_0x5ac1a4(0x1c0),profile_email[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1cf)],profile_phone['value']=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1dc)],shipping_fullname[_0x5ac1a4(0x1a4)]=_0x11f544['profile'][_0x5ac1a4(0x1e3)],shipping_address1[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1ca)],shipping_address2[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1ba)],shipping_country[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1ac)],shipping_state[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1d2)],shipping_city[_0x5ac1a4(0x1a4)]=_0x11f544['profile'][_0x5ac1a4(0x19e)],shipping_zip['value']=_0x11f544['profile'][_0x5ac1a4(0x1b9)],billing_fullname[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1db)],billing_address1[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)]['billingAddress1'],billing_address2[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1bc)],billing_country[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1af)],billing_state[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)]['billingState'],billing_city[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1e1)],billing_zip[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1e4)],card_holder['value']=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1eb)],card_number[_0x5ac1a4(0x1a4)]=_0x11f544['profile'][_0x5ac1a4(0x1c3)],card_cvv[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1bb)],expiry_month['value']=_0x11f544[_0x5ac1a4(0x1c7)][_0x5ac1a4(0x1c2)],expiry_year[_0x5ac1a4(0x1a4)]=_0x11f544[_0x5ac1a4(0x1c7)]['cYear'],profile_save[_0x5ac1a4(0x1cc)]='Duplicate');});}duplicate_profile();
+const profile_name = document.getElementById("profile_name");
+const profile_email = document.getElementById("profile_email");
+const profile_phone = document.getElementById("profile_phone");
+
+const shipping_fullname = document.getElementById("shipping_fullname");
+const shipping_address1 = document.getElementById("shipping_address1");
+const shipping_address2 = document.getElementById("shipping_address2");
+const shipping_country = document.getElementById("shipping_country");
+const shipping_state = document.getElementById("shipping_state");
+const shipping_city = document.getElementById("shipping_city");
+const shipping_zip = document.getElementById("shipping_zip");
+
+const billing_fullname = document.getElementById("billing_fullname");
+const billing_address1 = document.getElementById("billing_address1");
+const billing_address2 = document.getElementById("billing_address2");
+const billing_country = document.getElementById("billing_country");
+const billing_state = document.getElementById("billing_state");
+const billing_city = document.getElementById("billing_city");
+const billing_zip = document.getElementById("billing_zip");
+
+const card_holder = document.getElementById("card_holder");
+const card_number = document.getElementById("card_number");
+const card_cvv = document.getElementById("card_cvv");
+const expiry_month = document.getElementById("expiry_month");
+const expiry_year = document.getElementById("expiry_year");
+
+const same_as_shipping = document.getElementById("same_as_shipping");
+
+const profile_save = document.getElementById("profile_save");
+
+const storage = chrome.storage.local;
+let countryData = [];
+
+async function getCountryAndStates () {
+    const stmResult = await fetch('https://api.printful.com/countries');
+    const result = await stmResult.json();
+    const data = result.result;
+    data.forEach(country => {
+        let optionElm = document.createElement('option');
+        optionElm.textContent = country.name;
+        optionElm.value = country.code;
+        shipping_country.append(optionElm);
+    });
+
+    data.forEach(country => {
+        let optionElm = document.createElement('option');
+        optionElm.textContent = country.name;
+        optionElm.value = country.code;
+        billing_country.append(optionElm);
+    });
+
+    countryData = data;
+}
+getCountryAndStates();
+
+shipping_country.addEventListener('change', (event) => {
+    shipping_state.innerHTML = '<option disabled selected value="">State</option>';
+    countryData.forEach(country => {
+        if (country.code === event.target.value && country.states !== null) {
+            country.states.forEach(state => {
+                let stateElm = document.createElement('option');
+                stateElm.textContent = state.name;
+                stateElm.value = state.code;
+                shipping_state.appendChild(stateElm);
+            });
+
+            country.states.forEach(state => {
+                let stateElm = document.createElement('option');
+                stateElm.textContent = state.name;
+                stateElm.value = state.code;
+                billing_state.appendChild(stateElm);
+            })
+        }
+        return
+    })
+});
+
+billing_country.addEventListener('change', (event) => {
+    billing_state.innerHTML = '<option disabled selected value="">State</option>';
+    countryData.forEach(country => {
+        if (country.code === event.target.value && country.states !== null) {
+            country.states.forEach(state => {
+                let stateElm = document.createElement('option');
+                stateElm.textContent = state.name;
+                stateElm.value = state.code;
+                billing_state.appendChild(stateElm);
+            })
+        }
+        return
+    })
+});
+
+//profile save button listener
+profile_save.addEventListener("click", function () {
+    profileSave();
+});
+
+same_as_shipping.addEventListener("click", function () {
+    countryData.forEach(country => {
+        if (country.code === shipping_country.value && country.states !== null) {
+            country.states.forEach(state => {
+                let stateElm = document.createElement('option');
+                stateElm.textContent = state.name;
+                stateElm.value = state.code;
+                billing_state.appendChild(stateElm);
+            })
+        }
+        return
+    });
+
+    if (same_as_shipping.checked) {
+        billing_fullname.value = shipping_fullname.value;
+        billing_address1.value = shipping_address1.value;
+        billing_address2.value = shipping_address2.value;
+        billing_country.value = shipping_country.value;
+        billing_state.value = shipping_state.value;
+        billing_city.value = shipping_city.value;
+        billing_zip.value = shipping_zip.value;
+        billing_fullname.disabled = true;
+        billing_address1.disabled = true;
+        billing_address2.disabled = true;
+        billing_country.disabled = true;
+        billing_state.disabled = true;
+        billing_city.disabled = true;
+        billing_zip.disabled = true;
+    } else {
+        billing_fullname.value = "";
+        billing_address1.value = "";
+        billing_address2.value = "";
+        billing_country.value = "default";
+        billing_state.value = "default";
+        billing_city.value = "";
+        billing_zip.value = "";
+        billing_fullname.disabled = false;
+        billing_address1.disabled = false;
+        billing_address2.disabled = false;
+        billing_country.disabled = false;
+        billing_state.disabled = false;
+        billing_city.disabled = false;
+        billing_zip.disabled = false;
+    }
+});
+
+function edit_profile() {
+    storage.get({ edit_state_profile: '', profiles: [] }, function (result) {
+        let edit_state_profile = result.edit_state_profile;
+
+        let edit_profile = result.profiles.filter(profile => profile.id === edit_state_profile)[0];
+
+        if (edit_state_profile) {
+            profile_name.value = edit_profile.profile.profileName;
+            profile_email.value = edit_profile.profile.email;
+            profile_phone.value = edit_profile.profile.phone;
+            shipping_fullname.value = edit_profile.profile.shippingFullName;
+            shipping_address1.value = edit_profile.profile.shippingAddress1;
+            shipping_address2.value = edit_profile.profile.shippingAddress2;
+            shipping_country.value = edit_profile.profile.shippingCountry;
+            shipping_state.value = edit_profile.profile.shippingState;
+            shipping_city.value = edit_profile.profile.shippingCity;
+            shipping_zip.value = edit_profile.profile.shippingZip;
+            billing_fullname.value = edit_profile.profile.billingFullName;
+            billing_address1.value = edit_profile.profile.billingAddress1;
+            billing_address2.value = edit_profile.profile.billingAddress2;
+            billing_country.value = edit_profile.profile.billingCountry;
+            billing_state.value = edit_profile.profile.billingState;
+            billing_city.value = edit_profile.profile.billingCity;
+            billing_zip.value = edit_profile.profile.billingZip;
+            card_holder.value = edit_profile.profile.cHolder;
+            card_number.value = edit_profile.profile.cNumber;
+            card_cvv.value = edit_profile.profile.cCvv;
+            expiry_month.value = edit_profile.profile.cMonth;
+            expiry_year.value = edit_profile.profile.cYear;
+        }
+    });
+}
+edit_profile();
+
+function profileSave() {
+    storage.get('edit_state_profile', function (result) {
+        let edit_state_profile = result.edit_state_profile;
+
+        storage.get({ profiles: [], duplicate_profile: {} }, (result) => {
+            let profiles = result.profiles;
+            let duplicate_item = result.duplicate_profile;
+
+            const newProfile = {
+                "id": edit_state_profile ? edit_state_profile : generateId(),
+                "cc_last4": card_number.value ? card_number.value.slice(-4) : "0000",
+                "profile": {
+                    "profileName": profile_name.value ? profile_name.value : "Default Profile",
+                    "email": profile_email.value,
+                    "phone": profile_phone.value,
+                    "shippingFullName": shipping_fullname.value,
+                    "shippingAddress1": shipping_address1.value,
+                    "shippingAddress2": shipping_address2.value,
+                    "shippingCity": shipping_city.value,
+                    "shippingCountry": shipping_country.value,
+                    "shippingState": shipping_state.value,
+                    "shippingZip": shipping_zip.value,
+                    "billingFullName": billing_fullname.value,
+                    "billingAddress1": billing_address1.value,
+                    "billingAddress2": billing_address2.value,
+                    "billingCity": billing_city.value,
+                    "billingCountry": billing_country.value,
+                    "billingState": billing_state.value,
+                    "billingZip": billing_zip.value,
+                    "cHolder": card_holder.value,
+                    "cNumber": card_number.value ? card_number.value : "4242424242424242",
+                    "cMonth": expiry_month.value,
+                    "cYear": expiry_year.value,
+                    "cCvv": card_cvv.value,
+                }
+            };
+
+            let newProfiles = profiles.map(profile => {
+                if (profile.id === edit_state_profile) {
+                    return newProfile
+                } else {
+                    return profile
+                }
+            });
+
+            if (!edit_state_profile) {
+                newProfiles = [newProfile].concat(profiles);
+            }
+
+            //init data
+            profile_name.value = "";
+            profile_email.value = "";
+            profile_phone.value = "";
+            shipping_fullname.value = "";
+            shipping_address1.value = "";
+            shipping_address2.value = "";
+            shipping_country.value = "default";
+            shipping_state.value = "default";
+            shipping_city.value = "";
+            shipping_zip.value = "";
+            billing_fullname.value = "";
+            billing_address1.value = "";
+            billing_address2.value = "";
+            billing_country.value = "default";
+            billing_state.value = "default";
+            billing_city.value = "";
+            billing_zip.value = "";
+            card_holder.value = "";
+            card_number.value = "";
+            card_cvv.value = "";
+            expiry_month.value = "";
+            expiry_year.value = "";
+
+            storage.set({ profiles: newProfiles }, (result) => {
+                if (edit_state_profile) {
+                    notificationDisplay("Profile has been updated!");
+                    storage.set({ edit_state_profile: null });
+                }else if(duplicate_item){
+                    notificationDisplay("Profile has been duplicated!");
+                    storage.set({ duplicate_profile: null });
+                } else {
+                    notificationDisplay("Profile has been created!");
+                }
+            })
+        })
+    });
+}
+
+function generateId() {
+    return Date.now().toString(36) + Math.random().toString(36).substr(2);
+}
+
+function notificationDisplay(msg) {
+    let notification = document.getElementById("notification");
+    notification.style.display = "block";
+
+    let elem = document.getElementById("notification-loader");
+    let msgElement = document.getElementById("notification-text");
+    let width = 50;
+    let id = setInterval(frame, 20);
+    function frame() {
+        if (width === 0) {
+            clearInterval(id);
+            notification.style.display = "none"
+        } else {
+            width--;
+            elem.style.width = width + '%';
+            msgElement.innerHTML = msg
+        }
+    }
+}
+
+function duplicate_profile() {
+    storage.get({ duplicate_profile: '', profiles: [] }, function (result) {
+        let duplicate_profile = result.duplicate_profile;
+
+        let duplicate = result.profiles.filter(profile => profile.id === duplicate_profile)[0];
+
+        if (duplicate_profile) {
+            profile_name.value = duplicate.profile.profileName + " Copy";
+            profile_email.value = duplicate.profile.email;
+            profile_phone.value = duplicate.profile.phone;
+            shipping_fullname.value = duplicate.profile.shippingFullName;
+            shipping_address1.value = duplicate.profile.shippingAddress1;
+            shipping_address2.value = duplicate.profile.shippingAddress2;
+            shipping_country.value = duplicate.profile.shippingCountry;
+            shipping_state.value = duplicate.profile.shippingState;
+            shipping_city.value = duplicate.profile.shippingCity;
+            shipping_zip.value = duplicate.profile.shippingZip;
+            billing_fullname.value = duplicate.profile.billingFullName;
+            billing_address1.value = duplicate.profile.billingAddress1;
+            billing_address2.value = duplicate.profile.billingAddress2;
+            billing_country.value = duplicate.profile.billingCountry;
+            billing_state.value = duplicate.profile.billingState;
+            billing_city.value = duplicate.profile.billingCity;
+            billing_zip.value = duplicate.profile.billingZip;
+            card_holder.value = duplicate.profile.cHolder;
+            card_number.value = duplicate.profile.cNumber;
+            card_cvv.value = duplicate.profile.cCvv;
+            expiry_month.value = duplicate.profile.cMonth;
+            expiry_year.value = duplicate.profile.cYear;
+
+            profile_save.innerHTML = "Duplicate"
+        }
+    });
+}
+duplicate_profile();

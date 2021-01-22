@@ -1,1 +1,655 @@
-const _0x2945=['button-setting-dashboard\x20active-setting','shopify_basic_request','captcha','set','122023Iawmye','href','shopify_atf','button-setting','local','28ThhhoI','shopify_math_solver','settings','1ipVNdC','stripe_aco','1RPwplp','shrey_aco','shopify_aco','298981YDWNGg','location','link_appender','price_range_state','aio_atf','multi_meta_aco','shopify_pr_request','2fyLrLY','get','button-setting\x20active-setting','velo_aco','link_appender.html','addEventListener','discord_auth','tl_dash_aco','storage','286570clMgkU','shopify_auto_atc','stripe_atf','animation_remover','196116yBBngi','shopify_cart_bypass','button-setting-dashboard','ducky_aco','getElementById','price_range.html','className','24cRdWuE','531437VLeUxg','google_form_aco','meta_aco','13407RqQECj','click','diy','9279DgKmWI'];const _0x1839=function(_0x45f669,_0x3665cd){_0x45f669=_0x45f669-0xce;let _0x294573=_0x2945[_0x45f669];return _0x294573;};const _0x3d20de=_0x1839;(function(_0x33a849,_0x1cf6d0){const _0x31d38b=_0x1839;while(!![]){try{const _0x1b8977=-parseInt(_0x31d38b(0xf0))+-parseInt(_0x31d38b(0xdc))*-parseInt(_0x31d38b(0xd9))+parseInt(_0x31d38b(0xd4))*parseInt(_0x31d38b(0xfb))+parseInt(_0x31d38b(0xfe))*parseInt(_0x31d38b(0xf7))+parseInt(_0x31d38b(0xec))*parseInt(_0x31d38b(0xd7))+parseInt(_0x31d38b(0xcf))*-parseInt(_0x31d38b(0xe3))+-parseInt(_0x31d38b(0xf8));if(_0x1b8977===_0x1cf6d0)break;else _0x33a849['push'](_0x33a849['shift']());}catch(_0x41b7cb){_0x33a849['push'](_0x33a849['shift']());}}}(_0x2945,0x33c4c));const storage=chrome[_0x3d20de(0xeb)][_0x3d20de(0xd3)];storage[_0x3d20de(0xce)]({'edit_state_profile':null});const shopify_atf=document['getElementById'](_0x3d20de(0xd1)),shopify_aco=document['getElementById'](_0x3d20de(0xdb)),shopify_auto_atc=document[_0x3d20de(0xf4)]('shopify_auto_atc'),shopify_cart_bypass=document[_0x3d20de(0xf4)](_0x3d20de(0xf1)),shopify_math_solver=document[_0x3d20de(0xf4)]('shopify_math_solver'),shopify_basic_request=document[_0x3d20de(0xf4)](_0x3d20de(0x100)),shopify_pr_request=document[_0x3d20de(0xf4)](_0x3d20de(0xe2)),price_range_state=document[_0x3d20de(0xf4)](_0x3d20de(0xdf)),stripe_atf=document[_0x3d20de(0xf4)]('stripe_atf'),stripe_aco=document[_0x3d20de(0xf4)]('stripe_aco'),velo_aco=document['getElementById'](_0x3d20de(0xe6)),shrey_aco=document[_0x3d20de(0xf4)](_0x3d20de(0xda)),tl_dash_aco=document[_0x3d20de(0xf4)](_0x3d20de(0xea)),multi_meta_aco=document['getElementById'](_0x3d20de(0xe1)),meta_aco=document['getElementById'](_0x3d20de(0xfa)),ducky_aco=document[_0x3d20de(0xf4)](_0x3d20de(0xf3)),aio_atf=document[_0x3d20de(0xf4)](_0x3d20de(0xe0)),diy=document[_0x3d20de(0xf4)](_0x3d20de(0xfd)),animation_remover=document['getElementById'](_0x3d20de(0xef)),link_appender=document[_0x3d20de(0xf4)](_0x3d20de(0xde)),google_form_aco=document[_0x3d20de(0xf4)](_0x3d20de(0xf9)),discord_auth=document[_0x3d20de(0xf4)](_0x3d20de(0xe9)),captcha=document[_0x3d20de(0xf4)](_0x3d20de(0x101)),settings={'shopify_atf':![],'shopify_aco':![],'shopify_auto_atc':![],'shopify_cart_bypass':![],'shopify_math_solver':![],'shopify_basic_request':![],'shopify_pr_request':![],'stripe_atf':![],'stripe_aco':![],'velo_aco':![],'shrey_aco':![],'tl_dash_aco':![],'multi_meta_aco':![],'meta_aco':![],'ducky_aco':![],'aio_atf':![],'animation_remover':![],'link_appender':![],'google_form_aco':![],'discord_auth':![],'captcha':![]};function initSetting(){const _0x2f12fe=_0x3d20de;storage[_0x2f12fe(0xe4)]({'settings':{},'diy_config':{},'link_config':{}},function(_0x5cc1b9){const _0x2bc182=_0x2f12fe,_0x9588ff=_0x5cc1b9[_0x2bc182(0xd6)],_0x5c7a3d=_0x5cc1b9['diy_config'],_0x1817c3=_0x5cc1b9['link_config'];shopify_atf[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xd1)]?'button-setting\x20active-setting':_0x2bc182(0xd2),shopify_aco[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xdb)]?_0x2bc182(0xe5):_0x2bc182(0xd2),shopify_auto_atc['className']=_0x9588ff[_0x2bc182(0xed)]?_0x2bc182(0xe5):_0x2bc182(0xd2),shopify_cart_bypass[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xf1)]?_0x2bc182(0xe5):_0x2bc182(0xd2),shopify_math_solver['className']=_0x9588ff[_0x2bc182(0xd5)]?_0x2bc182(0xe5):'button-setting',shopify_basic_request[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0x100)]?_0x2bc182(0xe5):_0x2bc182(0xd2),shopify_pr_request[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xe2)]?'button-setting\x20active-setting':_0x2bc182(0xd2),stripe_atf['className']=_0x9588ff[_0x2bc182(0xee)]?_0x2bc182(0xe5):_0x2bc182(0xd2),stripe_aco[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xd8)]?'button-setting\x20active-setting':_0x2bc182(0xd2),velo_aco['className']=_0x9588ff['velo_aco']?_0x2bc182(0xff):_0x2bc182(0xf2),shrey_aco[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xda)]?_0x2bc182(0xff):'button-setting-dashboard',tl_dash_aco[_0x2bc182(0xf6)]=_0x9588ff['tl_dash_aco']?_0x2bc182(0xff):_0x2bc182(0xf2),multi_meta_aco[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xe1)]?_0x2bc182(0xff):'button-setting-dashboard',meta_aco[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xfa)]?_0x2bc182(0xff):_0x2bc182(0xf2),ducky_aco['className']=_0x9588ff[_0x2bc182(0xf3)]?_0x2bc182(0xff):'button-setting-dashboard',aio_atf[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xe0)]?'button-setting\x20active-setting':_0x2bc182(0xd2),diy[_0x2bc182(0xf6)]=_0x5c7a3d?_0x2bc182(0xe5):'button-setting',animation_remover[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xef)]?_0x2bc182(0xe5):_0x2bc182(0xd2),link_appender[_0x2bc182(0xf6)]=_0x1817c3?'button-setting\x20active-setting':_0x2bc182(0xd2),google_form_aco[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xf9)]?'button-setting\x20active-setting':'button-setting',discord_auth[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0xe9)]?_0x2bc182(0xe5):'button-setting',captcha[_0x2bc182(0xf6)]=_0x9588ff[_0x2bc182(0x101)]?'button-setting\x20active-setting':_0x2bc182(0xd2);});}initSetting(),shopify_atf[_0x3d20de(0xe8)]('click',function(){const _0x55653d=_0x3d20de;storage[_0x55653d(0xe4)]({'settings':{}},function(_0x5a3342){const _0x3d8060=_0x55653d;_0x5a3342[_0x3d8060(0xd6)][_0x3d8060(0xd1)]!==undefined?storage[_0x3d8060(0xce)]({'settings':{..._0x5a3342[_0x3d8060(0xd6)],'shopify_atf':_0x5a3342[_0x3d8060(0xd6)][_0x3d8060(0xd1)]?![]:!![]}}):storage[_0x3d8060(0xce)]({'settings':{...settings,'shopify_atf':!![]}}),_0x5a3342['settings']['shopify_atf']?shopify_atf[_0x3d8060(0xf6)]=_0x3d8060(0xd2):shopify_atf[_0x3d8060(0xf6)]=_0x3d8060(0xe5);});}),shopify_aco[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){const _0x450a0e=_0x3d20de;storage[_0x450a0e(0xe4)]({'settings':{}},function(_0x295601){const _0x44bff0=_0x450a0e;_0x295601[_0x44bff0(0xd6)]['shopify_aco']!==undefined?storage[_0x44bff0(0xce)]({'settings':{..._0x295601[_0x44bff0(0xd6)],'shopify_aco':_0x295601[_0x44bff0(0xd6)][_0x44bff0(0xdb)]?![]:!![]}}):storage[_0x44bff0(0xce)]({'settings':{...settings,'shopify_aco':!![]}}),_0x295601[_0x44bff0(0xd6)][_0x44bff0(0xdb)]?shopify_aco['className']='button-setting':shopify_aco['className']=_0x44bff0(0xe5);});}),shopify_auto_atc[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){storage['get']({'settings':{}},function(_0x213c7d){const _0x27bc68=_0x1839;_0x213c7d[_0x27bc68(0xd6)][_0x27bc68(0xed)]!==undefined?storage[_0x27bc68(0xce)]({'settings':{..._0x213c7d[_0x27bc68(0xd6)],'shopify_auto_atc':_0x213c7d[_0x27bc68(0xd6)][_0x27bc68(0xed)]?![]:!![]}}):storage[_0x27bc68(0xce)]({'settings':{...settings,'shopify_auto_atc':!![]}}),_0x213c7d[_0x27bc68(0xd6)][_0x27bc68(0xed)]?shopify_auto_atc[_0x27bc68(0xf6)]=_0x27bc68(0xd2):shopify_auto_atc[_0x27bc68(0xf6)]=_0x27bc68(0xe5);});}),shopify_cart_bypass[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){storage['get']({'settings':{}},function(_0x17d971){const _0x7f76ad=_0x1839;_0x17d971[_0x7f76ad(0xd6)][_0x7f76ad(0xf1)]!==undefined?storage[_0x7f76ad(0xce)]({'settings':{..._0x17d971[_0x7f76ad(0xd6)],'shopify_cart_bypass':_0x17d971['settings']['shopify_cart_bypass']?![]:!![]}}):storage[_0x7f76ad(0xce)]({'settings':{...settings,'shopify_cart_bypass':!![]}}),_0x17d971[_0x7f76ad(0xd6)][_0x7f76ad(0xf1)]?shopify_cart_bypass[_0x7f76ad(0xf6)]='button-setting':shopify_cart_bypass[_0x7f76ad(0xf6)]=_0x7f76ad(0xe5);});}),shopify_math_solver[_0x3d20de(0xe8)]('click',function(){const _0x5e6aaa=_0x3d20de;storage[_0x5e6aaa(0xe4)]({'settings':{}},function(_0x236bbe){const _0x142c3c=_0x5e6aaa;_0x236bbe[_0x142c3c(0xd6)][_0x142c3c(0xd5)]!==undefined?storage['set']({'settings':{..._0x236bbe['settings'],'shopify_math_solver':_0x236bbe[_0x142c3c(0xd6)]['shopify_math_solver']?![]:!![]}}):storage[_0x142c3c(0xce)]({'settings':{...settings,'shopify_math_solver':!![]}}),_0x236bbe['settings'][_0x142c3c(0xd5)]?shopify_math_solver[_0x142c3c(0xf6)]=_0x142c3c(0xd2):shopify_math_solver[_0x142c3c(0xf6)]='button-setting\x20active-setting';});}),shopify_basic_request[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){const _0x3aa949=_0x3d20de;storage[_0x3aa949(0xe4)]({'settings':{}},function(_0x5528e4){const _0x489bae=_0x3aa949;_0x5528e4['settings'][_0x489bae(0x100)]!==undefined?storage[_0x489bae(0xce)]({'settings':{..._0x5528e4[_0x489bae(0xd6)],'shopify_basic_request':_0x5528e4[_0x489bae(0xd6)]['shopify_basic_request']?![]:!![]}}):storage[_0x489bae(0xce)]({'settings':{...settings,'shopify_basic_request':!![]}}),_0x5528e4[_0x489bae(0xd6)]['shopify_basic_request']?shopify_basic_request[_0x489bae(0xf6)]=_0x489bae(0xd2):shopify_basic_request[_0x489bae(0xf6)]='button-setting\x20active-setting';});}),shopify_pr_request[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){const _0xbe4d93=_0x3d20de;window[_0xbe4d93(0xdd)]['href']=_0xbe4d93(0xf5);}),stripe_atf[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){storage['get']({'settings':{}},function(_0x1e8090){const _0x30dc48=_0x1839;_0x1e8090[_0x30dc48(0xd6)][_0x30dc48(0xee)]!==undefined?storage[_0x30dc48(0xce)]({'settings':{..._0x1e8090['settings'],'stripe_atf':_0x1e8090[_0x30dc48(0xd6)]['stripe_atf']?![]:!![]}}):storage['set']({'settings':{...settings,'stripe_atf':!![]}}),_0x1e8090['settings']['stripe_atf']?stripe_atf[_0x30dc48(0xf6)]=_0x30dc48(0xd2):stripe_atf['className']=_0x30dc48(0xe5);});}),stripe_aco[_0x3d20de(0xe8)]('click',function(){const _0x40f6a3=_0x3d20de;storage[_0x40f6a3(0xe4)]({'settings':{}},function(_0x2e41a8){const _0x3875e1=_0x40f6a3;_0x2e41a8[_0x3875e1(0xd6)][_0x3875e1(0xd8)]!==undefined?storage['set']({'settings':{..._0x2e41a8[_0x3875e1(0xd6)],'stripe_aco':_0x2e41a8['settings'][_0x3875e1(0xd8)]?![]:!![]}}):storage['set']({'settings':{...settings,'stripe_aco':!![]}}),_0x2e41a8['settings'][_0x3875e1(0xd8)]?stripe_aco[_0x3875e1(0xf6)]=_0x3875e1(0xd2):stripe_aco['className']='button-setting\x20active-setting';});}),velo_aco[_0x3d20de(0xe8)]('click',function(){const _0x233c68=_0x3d20de;storage[_0x233c68(0xe4)]({'settings':{}},function(_0x3a7e7b){const _0x47d31c=_0x233c68;_0x3a7e7b['settings'][_0x47d31c(0xe6)]!==undefined?storage[_0x47d31c(0xce)]({'settings':{..._0x3a7e7b['settings'],'velo_aco':_0x3a7e7b['settings'][_0x47d31c(0xe6)]?![]:!![]}}):storage[_0x47d31c(0xce)]({'settings':{...settings,'velo_aco':!![]}}),_0x3a7e7b[_0x47d31c(0xd6)][_0x47d31c(0xe6)]?velo_aco[_0x47d31c(0xf6)]=_0x47d31c(0xf2):velo_aco[_0x47d31c(0xf6)]=_0x47d31c(0xff);});}),shrey_aco[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){const _0xf55096=_0x3d20de;storage[_0xf55096(0xe4)]({'settings':{}},function(_0xae2516){const _0x10fce6=_0xf55096;_0xae2516[_0x10fce6(0xd6)][_0x10fce6(0xda)]!==undefined?storage[_0x10fce6(0xce)]({'settings':{..._0xae2516[_0x10fce6(0xd6)],'shrey_aco':_0xae2516['settings'][_0x10fce6(0xda)]?![]:!![]}}):storage[_0x10fce6(0xce)]({'settings':{...settings,'shrey_aco':!![]}}),_0xae2516[_0x10fce6(0xd6)][_0x10fce6(0xda)]?shrey_aco[_0x10fce6(0xf6)]=_0x10fce6(0xf2):shrey_aco[_0x10fce6(0xf6)]=_0x10fce6(0xff);});}),tl_dash_aco[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){const _0x411476=_0x3d20de;storage[_0x411476(0xe4)]({'settings':{}},function(_0x395eb0){const _0x3c662c=_0x411476;_0x395eb0['settings'][_0x3c662c(0xea)]!==undefined?storage['set']({'settings':{..._0x395eb0[_0x3c662c(0xd6)],'tl_dash_aco':_0x395eb0[_0x3c662c(0xd6)]['tl_dash_aco']?![]:!![]}}):storage[_0x3c662c(0xce)]({'settings':{...settings,'tl_dash_aco':!![]}}),_0x395eb0[_0x3c662c(0xd6)][_0x3c662c(0xea)]?tl_dash_aco[_0x3c662c(0xf6)]=_0x3c662c(0xf2):tl_dash_aco['className']=_0x3c662c(0xff);});}),multi_meta_aco['addEventListener']('click',function(){const _0x2a13bd=_0x3d20de;storage[_0x2a13bd(0xe4)]({'settings':{}},function(_0x1bad68){const _0x349aad=_0x2a13bd;_0x1bad68[_0x349aad(0xd6)][_0x349aad(0xe1)]!==undefined?storage['set']({'settings':{..._0x1bad68[_0x349aad(0xd6)],'multi_meta_aco':_0x1bad68[_0x349aad(0xd6)][_0x349aad(0xe1)]?![]:!![]}}):storage[_0x349aad(0xce)]({'settings':{...settings,'multi_meta_aco':!![]}}),_0x1bad68[_0x349aad(0xd6)][_0x349aad(0xe1)]?multi_meta_aco[_0x349aad(0xf6)]=_0x349aad(0xf2):multi_meta_aco[_0x349aad(0xf6)]=_0x349aad(0xff);});}),meta_aco[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){const _0xb20338=_0x3d20de;storage[_0xb20338(0xe4)]({'settings':{}},function(_0x4779b1){const _0x54a213=_0xb20338;_0x4779b1[_0x54a213(0xd6)]['meta_aco']!==undefined?storage[_0x54a213(0xce)]({'settings':{..._0x4779b1['settings'],'meta_aco':_0x4779b1[_0x54a213(0xd6)]['meta_aco']?![]:!![]}}):storage[_0x54a213(0xce)]({'settings':{...settings,'meta_aco':!![]}}),_0x4779b1[_0x54a213(0xd6)][_0x54a213(0xfa)]?meta_aco['className']=_0x54a213(0xf2):meta_aco['className']=_0x54a213(0xff);});}),ducky_aco['addEventListener'](_0x3d20de(0xfc),function(){storage['get']({'settings':{}},function(_0x89d8b){const _0x116799=_0x1839;_0x89d8b[_0x116799(0xd6)][_0x116799(0xf3)]!==undefined?storage[_0x116799(0xce)]({'settings':{..._0x89d8b['settings'],'ducky_aco':_0x89d8b[_0x116799(0xd6)][_0x116799(0xf3)]?![]:!![]}}):storage[_0x116799(0xce)]({'settings':{...settings,'ducky_aco':!![]}}),_0x89d8b['settings'][_0x116799(0xf3)]?ducky_aco[_0x116799(0xf6)]=_0x116799(0xf2):ducky_aco[_0x116799(0xf6)]=_0x116799(0xff);});}),aio_atf[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){storage['get']({'settings':{}},function(_0x55c055){const _0x3b1380=_0x1839;_0x55c055[_0x3b1380(0xd6)][_0x3b1380(0xe0)]!==undefined?storage[_0x3b1380(0xce)]({'settings':{..._0x55c055[_0x3b1380(0xd6)],'aio_atf':_0x55c055[_0x3b1380(0xd6)]['aio_atf']?![]:!![]}}):storage[_0x3b1380(0xce)]({'settings':{...settings,'aio_atf':!![]}}),_0x55c055[_0x3b1380(0xd6)][_0x3b1380(0xe0)]?aio_atf['className']=_0x3b1380(0xd2):aio_atf[_0x3b1380(0xf6)]=_0x3b1380(0xe5);});}),diy[_0x3d20de(0xe8)](_0x3d20de(0xfc),function(){const _0x1f142f=_0x3d20de;window['location'][_0x1f142f(0xd0)]='diy_config.html';}),animation_remover[_0x3d20de(0xe8)]('click',function(){const _0x281b31=_0x3d20de;storage[_0x281b31(0xe4)]({'settings':{}},function(_0x4d0d4f){const _0x9f98ca=_0x281b31;_0x4d0d4f[_0x9f98ca(0xd6)][_0x9f98ca(0xef)]!==undefined?storage[_0x9f98ca(0xce)]({'settings':{..._0x4d0d4f[_0x9f98ca(0xd6)],'animation_remover':_0x4d0d4f[_0x9f98ca(0xd6)][_0x9f98ca(0xef)]?![]:!![]}}):storage[_0x9f98ca(0xce)]({'settings':{...settings,'animation_remover':!![]}}),_0x4d0d4f[_0x9f98ca(0xd6)][_0x9f98ca(0xef)]?animation_remover[_0x9f98ca(0xf6)]=_0x9f98ca(0xd2):animation_remover[_0x9f98ca(0xf6)]='button-setting\x20active-setting';});}),link_appender[_0x3d20de(0xe8)]('click',function(){const _0x16c396=_0x3d20de;window[_0x16c396(0xdd)][_0x16c396(0xd0)]=_0x16c396(0xe7);}),google_form_aco['addEventListener'](_0x3d20de(0xfc),function(){const _0x935fb1=_0x3d20de;storage[_0x935fb1(0xe4)]({'settings':{}},function(_0x50adfa){const _0x80efb=_0x935fb1;_0x50adfa[_0x80efb(0xd6)][_0x80efb(0xf9)]!==undefined?storage[_0x80efb(0xce)]({'settings':{..._0x50adfa[_0x80efb(0xd6)],'google_form_aco':_0x50adfa[_0x80efb(0xd6)][_0x80efb(0xf9)]?![]:!![]}}):storage[_0x80efb(0xce)]({'settings':{...settings,'google_form_aco':!![]}}),_0x50adfa[_0x80efb(0xd6)][_0x80efb(0xf9)]?google_form_aco['className']=_0x80efb(0xd2):google_form_aco[_0x80efb(0xf6)]=_0x80efb(0xe5);});}),discord_auth['addEventListener'](_0x3d20de(0xfc),function(){const _0x35c95f=_0x3d20de;storage[_0x35c95f(0xe4)]({'settings':{}},function(_0x369cc0){const _0x17c1b9=_0x35c95f;_0x369cc0[_0x17c1b9(0xd6)][_0x17c1b9(0xe9)]!==undefined?storage[_0x17c1b9(0xce)]({'settings':{..._0x369cc0['settings'],'discord_auth':_0x369cc0[_0x17c1b9(0xd6)]['discord_auth']?![]:!![]}}):storage[_0x17c1b9(0xce)]({'settings':{...settings,'discord_auth':!![]}}),_0x369cc0[_0x17c1b9(0xd6)][_0x17c1b9(0xe9)]?discord_auth[_0x17c1b9(0xf6)]=_0x17c1b9(0xd2):discord_auth[_0x17c1b9(0xf6)]=_0x17c1b9(0xe5);});}),captcha['addEventListener'](_0x3d20de(0xfc),function(){const _0x48951e=_0x3d20de;storage[_0x48951e(0xe4)]({'settings':{}},function(_0x8d8b4d){const _0x19bf01=_0x48951e;_0x8d8b4d['settings']['captcha']!==undefined?storage['set']({'settings':{..._0x8d8b4d[_0x19bf01(0xd6)],'captcha':_0x8d8b4d[_0x19bf01(0xd6)][_0x19bf01(0x101)]?![]:!![]}}):storage['set']({'settings':{...settings,'captcha':!![]}}),_0x8d8b4d[_0x19bf01(0xd6)][_0x19bf01(0x101)]?captcha[_0x19bf01(0xf6)]=_0x19bf01(0xd2):captcha[_0x19bf01(0xf6)]=_0x19bf01(0xe5);});});
+const storage = chrome.storage.local;
+
+storage.set({edit_state_profile: null, duplicate_profile: null});
+
+const shopify_atf = document.getElementById("shopify_atf");
+const shopify_aco = document.getElementById("shopify_aco");
+const shopify_auto_atc = document.getElementById("shopify_auto_atc");
+const shopify_cart_bypass = document.getElementById("shopify_cart_bypass");
+const shopify_math_solver = document.getElementById("shopify_math_solver");
+const shopify_basic_request = document.getElementById("shopify_basic_request");
+const shopify_pr_request = document.getElementById("shopify_pr_request");
+const price_range_state = document.getElementById("price_range_state");
+const stripe_atf = document.getElementById("stripe_atf");
+const stripe_aco = document.getElementById("stripe_aco");
+
+const velo_aco = document.getElementById("velo_aco");
+const shrey_aco = document.getElementById("shrey_aco");
+const tl_dash_aco = document.getElementById("tl_dash_aco");
+const freddy_dash_aco_dom = document.getElementById("freddy_dash_aco_dom");
+const freddy_dash_aco_request = document.getElementById("freddy_dash_aco_request");
+const multi_meta_aco = document.getElementById("multi_meta_aco");
+const meta_aco = document.getElementById("meta_aco");
+const ducky_aco = document.getElementById("ducky_aco");
+
+const aio_atf = document.getElementById("aio_atf");
+const diy = document.getElementById("diy");
+const animation_remover = document.getElementById("animation_remover");
+const link_appender = document.getElementById("link_appender");
+const google_form_aco = document.getElementById("google_form_aco");
+const discord_auth = document.getElementById("discord_auth");
+const captcha = document.getElementById("captcha");
+
+const settings = {
+    shopify_atf: false,
+    shopify_aco: false,
+    shopify_auto_atc: false,
+    shopify_cart_bypass: false,
+    shopify_math_solver: false,
+    shopify_basic_request: false,
+    shopify_pr_request: false,
+    stripe_atf: false,
+    stripe_aco: false,
+    velo_aco: false,
+    shrey_aco: false,
+    tl_dash_aco: false,
+    freddy_dash_aco_dom: false,
+    freddy_dash_aco_request: false,
+    multi_meta_aco: false,
+    meta_aco: false,
+    ducky_aco: false,
+    aio_atf: false,
+    animation_remover: false,
+    link_appender: false,
+    google_form_aco: false,
+    discord_auth: false,
+    captcha: false
+};
+
+function initSetting() {
+    storage.get({settings: {}, diy_config: {}}, function(result) {
+        const setting = result.settings;
+        const diy_config = result.diy_config;
+        shopify_atf.className = setting.shopify_atf ? 'button-setting active-setting' : 'button-setting';
+        shopify_aco.className = setting.shopify_aco ? 'button-setting active-setting' : 'button-setting';
+        shopify_auto_atc.className = setting.shopify_auto_atc ? 'button-setting active-setting' : 'button-setting';
+        shopify_cart_bypass.className = setting.shopify_cart_bypass ? 'button-setting active-setting' : 'button-setting';
+        shopify_math_solver.className = setting.shopify_math_solver ? 'button-setting active-setting' : 'button-setting';
+        shopify_basic_request.className = setting.shopify_basic_request ? 'button-setting active-setting' : 'button-setting';
+        shopify_pr_request.className = setting.shopify_pr_request ? 'button-setting active-setting' : 'button-setting';
+        stripe_atf.className = setting.stripe_atf ? 'button-setting active-setting' : 'button-setting';
+        stripe_aco.className = setting.stripe_aco ? 'button-setting active-setting' : 'button-setting';
+
+        velo_aco.className = setting.velo_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        shrey_aco.className = setting.shrey_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        tl_dash_aco.className = setting.tl_dash_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        freddy_dash_aco_dom.className = setting.freddy_dash_aco_dom ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        freddy_dash_aco_request.className = setting.freddy_dash_aco_request ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        multi_meta_aco.className = setting.multi_meta_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        meta_aco.className = setting.meta_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        ducky_aco.className = setting.ducky_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+
+        aio_atf.className = setting.aio_atf ? 'button-setting active-setting' : 'button-setting';
+        diy.className = diy_config ? 'button-setting active-setting' : 'button-setting';
+        animation_remover.className = setting.animation_remover ? 'button-setting active-setting' : 'button-setting';
+        link_appender.className = setting.link_appender ? 'button-setting active-setting' : 'button-setting';
+        google_form_aco.className = setting.google_form_aco ? 'button-setting active-setting' : 'button-setting';
+        discord_auth.className = setting.discord_auth ? 'button-setting active-setting' : 'button-setting';
+        captcha.className = setting.captcha ? 'button-setting active-setting' : 'button-setting';
+    })
+}
+
+initSetting();
+
+//Modules
+shopify_atf.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.shopify_atf !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    shopify_atf: result.settings.shopify_atf ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    shopify_atf: true,
+                }
+            });
+        }
+
+        if (result.settings.shopify_atf) {
+            shopify_atf.className = 'button-setting';
+        } else {
+            shopify_atf.className = 'button-setting active-setting';
+        }
+    })
+});
+
+shopify_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.shopify_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    shopify_aco: result.settings.shopify_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    shopify_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.shopify_aco) {
+            shopify_aco.className = 'button-setting';
+        } else {
+            shopify_aco.className = 'button-setting active-setting';
+        }
+    })
+});
+
+shopify_auto_atc.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+      if (result.settings.shopify_auto_atc !== undefined) {
+        storage.set({
+            settings: {
+                ...result.settings,
+                shopify_auto_atc: result.settings.shopify_auto_atc ? false : true
+            }
+        });
+      } else {
+          storage.set({
+              settings: {
+                  ...settings,
+                  shopify_auto_atc: true
+              }
+          });
+      }
+
+      if (result.settings.shopify_auto_atc) {
+          shopify_auto_atc.className = 'button-setting';
+      } else {
+          shopify_auto_atc.className = 'button-setting active-setting';
+      }
+    })
+});
+
+shopify_cart_bypass.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.shopify_cart_bypass !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    shopify_cart_bypass: result.settings.shopify_cart_bypass ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    shopify_cart_bypass: true,
+                }
+            });
+        }
+
+        if (result.settings.shopify_cart_bypass) {
+            shopify_cart_bypass.className = 'button-setting';
+        } else {
+            shopify_cart_bypass.className = 'button-setting active-setting';
+        }
+    })
+});
+
+shopify_math_solver.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.shopify_math_solver !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    shopify_math_solver: result.settings.shopify_math_solver ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    shopify_math_solver: true,
+                }
+            });
+        }
+
+        if (result.settings.shopify_math_solver) {
+            shopify_math_solver.className = 'button-setting';
+        } else {
+            shopify_math_solver.className = 'button-setting active-setting';
+        }
+    })
+});
+
+shopify_basic_request.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.shopify_basic_request !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    shopify_basic_request: result.settings.shopify_basic_request ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    shopify_basic_request: true,
+                }
+            });
+        }
+
+        if (result.settings.shopify_basic_request) {
+            shopify_basic_request.className = 'button-setting';
+        } else {
+            shopify_basic_request.className = 'button-setting active-setting';
+        }
+    })
+});
+
+shopify_pr_request.addEventListener('click', function() {
+    window.location.href = 'price_range.html';
+});
+
+stripe_atf.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.stripe_atf !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    stripe_atf: result.settings.stripe_atf ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    stripe_atf: true,
+                }
+            });
+        }
+
+        if (result.settings.stripe_atf) {
+            stripe_atf.className = 'button-setting';
+        } else {
+            stripe_atf.className = 'button-setting active-setting';
+        }
+    })
+});
+
+stripe_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.stripe_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    stripe_aco: result.settings.stripe_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    stripe_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.stripe_aco) {
+            stripe_aco.className = 'button-setting';
+        } else {
+            stripe_aco.className = 'button-setting active-setting';
+        }
+    })
+});
+
+//Scripts
+velo_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.velo_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    velo_aco: result.settings.velo_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    velo_aco: true
+                }
+            });
+        }
+
+        if (result.settings.velo_aco) {
+            velo_aco.className = 'button-setting-dashboard';
+        } else {
+            velo_aco.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+shrey_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.shrey_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    shrey_aco: result.settings.shrey_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    shrey_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.shrey_aco) {
+            shrey_aco.className = 'button-setting-dashboard';
+        } else {
+            shrey_aco.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+tl_dash_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.tl_dash_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    tl_dash_aco: result.settings.tl_dash_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    tl_dash_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.tl_dash_aco) {
+            tl_dash_aco.className = 'button-setting-dashboard';
+        } else {
+            tl_dash_aco.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+freddy_dash_aco_dom.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.freddy_dash_aco_dom !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    freddy_dash_aco_dom: result.settings.freddy_dash_aco_dom ? false : true,
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    freddy_dash_aco_dom: true,
+                }
+            });
+        }
+
+        if (result.settings.freddy_dash_aco_dom) {
+            freddy_dash_aco_dom.className = 'button-setting-dashboard';
+        } else {
+            freddy_dash_aco_dom.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+freddy_dash_aco_request.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.freddy_dash_aco_request !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    freddy_dash_aco_request: result.settings.freddy_dash_aco_request ? false : true,
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    freddy_dash_aco_request: true,
+                    freddy_dash_aco_dom: false
+                }
+            });
+        }
+
+        if (result.settings.freddy_dash_aco_request) {
+            freddy_dash_aco_request.className = 'button-setting-dashboard';
+        } else {
+            freddy_dash_aco_request.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+multi_meta_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.multi_meta_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    multi_meta_aco: result.settings.multi_meta_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    multi_meta_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.multi_meta_aco) {
+            multi_meta_aco.className = 'button-setting-dashboard';
+        } else {
+            multi_meta_aco.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+meta_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.meta_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    meta_aco: result.settings.meta_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    meta_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.meta_aco) {
+            meta_aco.className = 'button-setting-dashboard';
+        } else {
+            meta_aco.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+ducky_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.ducky_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    ducky_aco: result.settings.ducky_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    ducky_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.ducky_aco) {
+            ducky_aco.className = 'button-setting-dashboard';
+        } else {
+            ducky_aco.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+
+// Other
+aio_atf.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.aio_atf !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    aio_atf: result.settings.aio_atf ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    aio_atf: true,
+                }
+            });
+        }
+
+        if (result.settings.aio_atf) {
+            aio_atf.className = 'button-setting';
+        } else {
+            aio_atf.className = 'button-setting active-setting';
+        }
+    })
+});
+
+diy.addEventListener('click', function () {
+    window.location.href = 'diy_config.html';
+});
+
+animation_remover.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.animation_remover !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    animation_remover: result.settings.animation_remover ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    animation_remover: true,
+                }
+            });
+        }
+
+        if (result.settings.animation_remover) {
+            animation_remover.className = 'button-setting';
+        } else {
+            animation_remover.className = 'button-setting active-setting';
+        }
+    })
+});
+
+link_appender.addEventListener('click', function(){
+    window.location.href = 'link_appender.html';
+});
+
+google_form_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.google_form_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    google_form_aco: result.settings.google_form_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    google_form_aco: true
+                }
+            });
+        }
+
+        if (result.settings.google_form_aco) {
+            google_form_aco.className = 'button-setting';
+        } else {
+            google_form_aco.className = 'button-setting active-setting';
+        }
+    })
+});
+
+discord_auth.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.discord_auth !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    discord_auth: result.settings.discord_auth ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    discord_auth: true
+                }
+            });
+        }
+
+        if (result.settings.discord_auth) {
+            discord_auth.className = 'button-setting';
+        } else {
+            discord_auth.className = 'button-setting active-setting';
+        }
+    })
+});
+
+captcha.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.captcha !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    captcha: result.settings.captcha ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    captcha: true
+                }
+            });
+        }
+
+        if (result.settings.captcha) {
+            captcha.className = 'button-setting';
+        } else {
+            captcha.className = 'button-setting active-setting';
+        }
+    })
+});
