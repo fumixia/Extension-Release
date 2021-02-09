@@ -1,9 +1,16 @@
 /**
  * essencial classes
  */
- .container {
-    margin: 20px 30px;
+.container {
+    margin: 20px 30px 0 30px;
     height: 360px;
+    overflow-y: scroll;
+    color: white;
+}
+
+.popup-container {
+    margin: 20px 30px;
+    height: 330px;
     overflow-y: scroll;
     color: white;
 }
@@ -261,4 +268,24 @@ select option { color: #75768F}
     color: white;
     transition-duration: 600ms, 600ms;
     transition-property: background-color, color;
+}
+
+.button-import {
+    width: 200px;
+    background-color: #6c62da;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.button-import:hover {
+    opacity: 0.9
+}
+
+.button-import-container {
+    position: absolute;
+    bottom: 8px;
+    margin: 0 30px;
+    width: 91%;
 }

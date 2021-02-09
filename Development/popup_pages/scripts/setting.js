@@ -20,6 +20,7 @@ const freddy_dash_aco_dom = document.getElementById("freddy_dash_aco_dom");
 const freddy_dash_aco_request = document.getElementById("freddy_dash_aco_request");
 const multi_meta_aco = document.getElementById("multi_meta_aco");
 const meta_aco = document.getElementById("meta_aco");
+const meta_atf_aco = document.getElementById("meta_atf_aco");
 const ducky_aco = document.getElementById("ducky_aco");
 
 const aio_atf = document.getElementById("aio_atf");
@@ -47,8 +48,10 @@ const settings = {
     freddy_dash_aco_request: false,
     multi_meta_aco: false,
     meta_aco: false,
+    meta_atf_aco: false,
     ducky_aco: false,
     aio_atf: false,
+    diy_state: false,
     animation_remover: false,
     link_appender: false,
     google_form_aco: false,
@@ -57,9 +60,8 @@ const settings = {
 };
 
 function initSetting() {
-    storage.get({settings: {}, diy_config: {}}, function(result) {
+    storage.get({settings: {}}, function(result) {
         const setting = result.settings;
-        const diy_config = result.diy_config;
         shopify_atf.className = setting.shopify_atf ? 'button-setting active-setting' : 'button-setting';
         shopify_aco.className = setting.shopify_aco ? 'button-setting active-setting' : 'button-setting';
         shopify_auto_atc.className = setting.shopify_auto_atc ? 'button-setting active-setting' : 'button-setting';
@@ -77,10 +79,11 @@ function initSetting() {
         freddy_dash_aco_request.className = setting.freddy_dash_aco_request ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         multi_meta_aco.className = setting.multi_meta_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         meta_aco.className = setting.meta_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        meta_atf_aco.className = setting.meta_atf_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         ducky_aco.className = setting.ducky_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
 
         aio_atf.className = setting.aio_atf ? 'button-setting active-setting' : 'button-setting';
-        diy.className = diy_config ? 'button-setting active-setting' : 'button-setting';
+        diy.className = setting.diy_state ? 'button-setting active-setting' : 'button-setting';
         animation_remover.className = setting.animation_remover ? 'button-setting active-setting' : 'button-setting';
         link_appender.className = setting.link_appender ? 'button-setting active-setting' : 'button-setting';
         google_form_aco.className = setting.google_form_aco ? 'button-setting active-setting' : 'button-setting';
@@ -484,6 +487,32 @@ meta_aco.addEventListener('click', function() {
             meta_aco.className = 'button-setting-dashboard';
         } else {
             meta_aco.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+meta_atf_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.meta_atf_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    meta_atf_aco: result.settings.meta_atf_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    meta_atf_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.meta_atf_aco) {
+            meta_atf_aco.className = 'button-setting-dashboard';
+        } else {
+            meta_atf_aco.className = 'button-setting-dashboard active-setting';
         }
     })
 });

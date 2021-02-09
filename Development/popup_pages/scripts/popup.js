@@ -8,15 +8,23 @@ const header = document.querySelector('header');
 const login_btn = document.getElementById("login-button");
 const login_input = document.getElementById("login-input");
 
+const export_btn = document.getElementById("profile_export");
+const import_btn = document.getElementById("profile_import");
+const import_file_input = document.getElementById("import_file");
+
 const storage = chrome.storage.local;
 
 storage.get({ 'auth': {} }, function (result) {
     if (result.auth.authenticated === true) {
         main_content.style.display = "block";
-        header.style.display = "block"
+        header.style.display = "block";
+        export_btn.style.display = "block";
+        import_btn.style.display = "block"
     } else {
         main_login.style.display = "block";
-        header.style.display = "none"
+        header.style.display = "none";
+        export_btn.style.display = "none";
+        import_btn.style.display = "none"
     }
 });
 
@@ -40,6 +48,8 @@ login_btn.addEventListener("click", function () {
                         header.style.display = "block";
                         main_content.style.display = "block";
                         main_login.style.display = "none";
+                        export_btn.style.display = "block";
+                        import_btn.style.display = "block";
 
                         chrome.storage.local.set({
                             'auth': {
@@ -303,4 +313,45 @@ document.addEventListener("click", function (event) {
     if (event.target.className.split(' ')[1] === 'duplicate-profile') {
         duplicate_item(event.target.id);
     }
+});
+
+export_btn.addEventListener('click', () => {
+    const fileName = 'TweetNinja_Profiles.json';
+    storage.get({ profiles: [] }, (results) => {
+        const jsonStr = JSON.stringify(results.profiles);
+
+        let element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(jsonStr));
+        element.setAttribute('download', fileName);
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+    })
+});
+
+import_btn.addEventListener('click', () => {
+    import_file_input.click();
+});
+
+import_file_input.addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+        const data = JSON.parse(e.target.result);
+        storage.get({ profiles: [] }, async (results) => {
+            let profiles = results.profiles;
+            let combinedData = data.concat(profiles);
+
+            storage.set({ profiles: combinedData }, (result) => {
+                displayProfiles();
+            });
+        });
+    };
+    reader.readAsText(file);
 });

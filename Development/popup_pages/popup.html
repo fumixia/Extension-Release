@@ -36,7 +36,7 @@
             <div id="notification-loader"></div>
         </div>
 
-        <div id="main-content" class="container">
+        <div id="main-content" class="popup-container">
             <div id="profiles">
 
             </div>
@@ -53,6 +53,16 @@
             </div>
         </div>
 
+        <div class="flex-row justify-content-between button-import-container">
+            <div>
+                <Button type="button" id="profile_import" class="button-import">Import</button>
+            </div>
+            <div>
+                <Button type="button" id="profile_export" class="button-import">Export</button>
+            </div>
+        </div>
+
+        <input id="import_file" type='file' style="display:none;" />
     </body>
     <script src="./scripts/popup.js"></script>
 </html>
