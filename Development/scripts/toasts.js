@@ -1,3 +1,4 @@
+
 let style = document.createElement('style');
 
 style.innerHTML =
@@ -82,8 +83,8 @@ style.innerHTML =
     '  to {right: 10px; opacity: 1;}\n' +
     '}\n';
 
-let ref = document.querySelector('script');
-ref.parentNode.insertBefore(style, ref);
+let ref = document.querySelector('head');
+ref.appendChild(style);
 
 async function setAttributes(el, attrs) {
     for(let key in attrs) {

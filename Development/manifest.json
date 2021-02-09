@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "TweetNinja Extension",
 	"description": "An extension developed by @TweetNinjaLLC",
-	"version": "3.0.22",
+	"version": "3.0.30",
 	"icons": {
 		"128": "./icons/logo.png"
 	},
@@ -22,6 +22,7 @@
 		"clipboardRead"
 	],
 	"background": {
+		"persistent": false,
 		"scripts": [
 			"background.js"
 		]
@@ -59,9 +60,13 @@
 				"https://*/*",
 				"http://*/*"
 			],
+			"exclude_matches": [
+				"https://checkout.stripe.com/*",
+				"https://checkout.stripe.com/pay/*",
+				"https://checkout.stripe.dev/*"
+			],
 			"js": [
 				"scripts/diy.js",
-				"scripts/link.js",
 				"scripts/aio.js",
 				"scripts/ducky.js",
 				"scripts/tl_dashboard.js",
@@ -74,7 +79,8 @@
 		{
 			"matches": [
 				"https://*/purchase",
-				"https://*/purchase*"
+				"https://*/purchase*",
+				"https://js.stripe.com/*"
 			],
 			"js": [
 				"scripts/metalabs.js",
