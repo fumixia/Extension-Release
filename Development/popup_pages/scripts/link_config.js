@@ -20,6 +20,7 @@ const settings = {
     velo_aco: false,
     shrey_aco: false,
     tl_dash_aco: false,
+    tl_dash_request: false,
     freddy_dash_aco_dom: false,
     freddy_dash_aco_request: false,
     meta_aco: false,
