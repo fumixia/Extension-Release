@@ -16,6 +16,7 @@ const stripe_aco = document.getElementById("stripe_aco");
 const velo_aco = document.getElementById("velo_aco");
 const shrey_aco = document.getElementById("shrey_aco");
 const tl_dash_aco = document.getElementById("tl_dash_aco");
+const tl_dash_request = document.getElementById("tl_dash_request");
 const freddy_dash_aco_dom = document.getElementById("freddy_dash_aco_dom");
 const freddy_dash_aco_request = document.getElementById("freddy_dash_aco_request");
 const multi_meta_aco = document.getElementById("multi_meta_aco");
@@ -44,6 +45,7 @@ const settings = {
     velo_aco: false,
     shrey_aco: false,
     tl_dash_aco: false,
+    tl_dash_request: false,
     freddy_dash_aco_dom: false,
     freddy_dash_aco_request: false,
     multi_meta_aco: false,
@@ -75,6 +77,7 @@ function initSetting() {
         velo_aco.className = setting.velo_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         shrey_aco.className = setting.shrey_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         tl_dash_aco.className = setting.tl_dash_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        tl_dash_request.className = setting.tl_dash_request ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         freddy_dash_aco_dom.className = setting.freddy_dash_aco_dom ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         freddy_dash_aco_request.className = setting.freddy_dash_aco_request ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         multi_meta_aco.className = setting.multi_meta_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
@@ -382,6 +385,32 @@ tl_dash_aco.addEventListener('click', function() {
             tl_dash_aco.className = 'button-setting-dashboard';
         } else {
             tl_dash_aco.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+tl_dash_request.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.tl_dash_request !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    tl_dash_request: result.settings.tl_dash_request ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    tl_dash_request: true,
+                }
+            });
+        }
+
+        if (result.settings.tl_dash_request) {
+            tl_dash_request.className = 'button-setting-dashboard';
+        } else {
+            tl_dash_request.className = 'button-setting-dashboard active-setting';
         }
     })
 });
