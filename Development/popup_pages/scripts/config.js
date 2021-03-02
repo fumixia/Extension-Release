@@ -4,6 +4,7 @@ const discord_webhook = document.getElementById("discord_webhook");
 const twitter_username = document.getElementById("twitter_username");
 const discord_username = document.getElementById("discord_username");
 const discord_id = document.getElementById("discord_id");
+const tl_token = document.getElementById("tl_token");
 
 const test_webhook = document.getElementById("test_webhook");
 const config_save = document.getElementById("config_save");
@@ -15,7 +16,8 @@ config_save.addEventListener("click", function() {
         discord_webhook: discord_webhook.value,
         twitter_username: twitter_username.value,
         discord_username: discord_username.value,
-        discord_id: discord_id.value
+        discord_id: discord_id.value,
+        tl_token: tl_token.value,
     };
 
     storage.set({config: config_data});
@@ -30,6 +32,7 @@ function get_config_data() {
             twitter_username.value = config_data.twitter_username;
             discord_username.value = config_data.discord_username;
             discord_id.value = config_data.discord_id;
+            tl_token.value = config_data.tl_token;
         }
     });
 }
@@ -71,7 +74,7 @@ test_webhook.addEventListener("click", function() {
             /*thumbnail: {
                 url: logo
             },*/
-            fields: [
+            fields: [
                 {
                     name: "**Selected Profile**",
                     value: `||${profile.profileName}||`
@@ -129,5 +132,3 @@ function notificationDisplay(msg) {
         }
     }
 }
-
-
