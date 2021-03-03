@@ -46,7 +46,7 @@ style.innerHTML =
     '  color: #fff;\n' +
     '  text-align: center;\n' +
     '  border-radius: 2px;\n' +
-    '  padding: 5px;\n' +
+    '  padding: 10px;\n' +
     '  position: fixed;\n' +
     '  z-index: 9999;\n' +
     '  right: 10px;\n' +
@@ -94,8 +94,19 @@ async function setAttributes(el, attrs) {
 
 async function toast(message) {
     let body = document.querySelector('body');
+    let toastWrapper;
+    toastWrapper = document.querySelector('#toast-wrapper');
+    if (!toastWrapper) {
+        let toastWrapperDraft = document.createElement('div');
+        await setAttributes(toastWrapperDraft, {id: 'toast-wrapper'});
+        body.appendChild(toastWrapperDraft);
+        toastWrapper = document.querySelector('#toast-wrapper');
+    }
 
-    let countOfToasts = document.querySelectorAll('#snackbar').length;
+    let countSnack = document.querySelectorAll('#snackbar-warning').length;
+    let countWarning = document.querySelectorAll('#snackbar').length;
+
+    let countOfToasts = countSnack + countWarning;
 
     let notifyWrapper = document.createElement('div');
     await setAttributes(notifyWrapper, {id: 'snackbar'});
@@ -110,29 +121,31 @@ async function toast(message) {
 
     notifyWrapper.appendChild(notiImg);
     notifyWrapper.appendChild(notiMsg);
-    body.appendChild(notifyWrapper);
+
+    toastWrapper.appendChild(notifyWrapper);
+
     setTimeout(() => {
         notifyWrapper.className = notifyWrapper.className.replace("show", "");
         notifyWrapper.parentNode.removeChild(notifyWrapper);
 
-        let toastSnacks = document.querySelectorAll('#snackbar');
-        let warningSnacks = document.querySelectorAll('#snackbar-warning');
+        let toastElm = document.querySelector('#toast-wrapper').children;
 
-        let toastElm = [];
-        if (toastSnacks.length) {
-            toastElm = toastSnacks.concat(warningSnacks);
-        } else {
-            toastElm = warningSnacks;
+        for (let i = 0; i < toastElm.length; i++) {
+            toastElm[i].style.marginTop = i * 65 + 'px';
         }
-
-        toastElm.forEach((toast, index) => {
-            toast.style.marginTop = index * 65 + 'px';
-        })
     }, 5000);
 }
 
 async function warning(message) {
     let body = document.querySelector('body');
+    let toastWrapper;
+    toastWrapper = document.querySelector('#toast-wrapper');
+    if (!toastWrapper) {
+        let toastWrapperDraft = document.createElement('div');
+        await setAttributes(toastWrapperDraft, {id: 'toast-wrapper'});
+        body.appendChild(toastWrapperDraft);
+        toastWrapper = document.querySelector('#toast-wrapper');
+    }
 
     let countSnack = document.querySelectorAll('#snackbar-warning').length;
     let countWarning = document.querySelectorAll('#snackbar').length;
@@ -152,23 +165,16 @@ async function warning(message) {
 
     notifyWrapper.appendChild(notiImg);
     notifyWrapper.appendChild(notiMsg);
-    body.appendChild(notifyWrapper);
+    toastWrapper.appendChild(notifyWrapper);
+
     setTimeout(() => {
         notifyWrapper.className = notifyWrapper.className.replace("show", "");
         notifyWrapper.parentNode.removeChild(notifyWrapper);
 
-        let toastSnacks = document.querySelectorAll('#snackbar');
-        let warningSnacks = document.querySelectorAll('#snackbar-warning');
+        let toastElm = document.querySelector('#toast-wrapper').children;
 
-        let toastElm = [];
-        if (toastSnacks.length) {
-            toastElm = toastSnacks.concat(warningSnacks);
-        } else {
-            toastElm = warningSnacks;
+        for (let i = 0; i < toastElm.length; i++) {
+            toastElm[i].style.marginTop = i * 65 + 'px';
         }
-
-        toastElm.forEach((toast, index) => {
-            toast.style.marginTop = index * 65 + 'px';
-        })
     }, 5000);
 }
