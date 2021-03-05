@@ -27,7 +27,7 @@ config_save.addEventListener("click", function() {
 function get_config_data() {
     storage.get({config: {}}, function(result) {
         let config_data = result.config;
-        if (config_data.discord_id || config_data.discord_username || config_data.discord_webhook || config_data.twitter_username) {
+        if (config_data.discord_id || config_data.discord_username || config_data.discord_webhook || config_data.twitter_username || config_data.tl_token) {
             discord_webhook.value = config_data.discord_webhook;
             twitter_username.value = config_data.twitter_username;
             discord_username.value = config_data.discord_username;
@@ -43,7 +43,8 @@ discord_webhook.addEventListener("change", (e) => {
         discord_webhook: discord_webhook.value,
         twitter_username: twitter_username.value,
         discord_username: discord_username.value,
-        discord_id: discord_id.value
+        discord_id: discord_id.value,
+        tl_token: tl_token.value
     };
 
     storage.set({config: config_data});
