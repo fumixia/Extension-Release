@@ -111,8 +111,8 @@
 		},
 		{
 			"matches": [
-				"https://*/*",
-				"http://*/*",
+				"https://dashboard.carbonmonitors.io/*",
+				"https://www.sabreio.co/*",
 				"https://checkout.stripe.com/v2/checkout.js"
 			],
 			"js": [
