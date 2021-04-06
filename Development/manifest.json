@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "TweetNinja Extension",
 	"description": "An extension developed by @TweetNinjaLLC",
-	"version": "3.0.70",
+	"version": "3.0.85",
 	"icons": {
 		"128": "./icons/logo.png"
 	},
@@ -78,6 +78,7 @@
 		},
 		{
 			"matches": [
+				"https://*/countdown",
 				"https://*/purchase",
 				"https://*/purchase*",
 				"https://js.stripe.com/*"
@@ -110,8 +111,9 @@
 		},
 		{
 			"matches": [
-				"https://dashboard.carbonmonitors.io/*",
-				"https://checkout.stripe.com/*"
+				"https://*/*",
+				"http://*/*",
+				"https://checkout.stripe.com/v2/checkout.js"
 			],
 			"js": [
 				"scripts/modules/freddy_dashboard.js",
