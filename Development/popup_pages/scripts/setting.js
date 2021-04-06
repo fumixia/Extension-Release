@@ -12,6 +12,7 @@ const shopify_pr_request = document.getElementById("shopify_pr_request");
 const price_range_state = document.getElementById("price_range_state");
 const stripe_atf = document.getElementById("stripe_atf");
 const stripe_aco = document.getElementById("stripe_aco");
+const supreme_aco = document.getElementById("supreme_aco");
 
 const velo_aco = document.getElementById("velo_aco");
 const shrey_aco = document.getElementById("shrey_aco");
@@ -42,6 +43,7 @@ const settings = {
     shopify_pr_request: false,
     stripe_atf: false,
     stripe_aco: false,
+    supreme_aco: false,
     velo_aco: false,
     shrey_aco: false,
     tl_dash_aco: false,
@@ -73,6 +75,7 @@ function initSetting() {
         shopify_pr_request.className = setting.shopify_pr_request ? 'button-setting active-setting' : 'button-setting';
         stripe_atf.className = setting.stripe_atf ? 'button-setting active-setting' : 'button-setting';
         stripe_aco.className = setting.stripe_aco ? 'button-setting active-setting' : 'button-setting';
+        supreme_aco.className = setting.supreme_aco ? 'button-setting active-setting' : 'button-setting';
 
         velo_aco.className = setting.velo_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         shrey_aco.className = setting.shrey_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
@@ -602,6 +605,10 @@ aio_atf.addEventListener('click', function() {
 
 diy.addEventListener('click', function () {
     window.location.href = 'diy_config.html';
+});
+
+supreme_aco.addEventListener('click', function () {
+    window.location.href = 'supreme_config.html';
 });
 
 animation_remover.addEventListener('click', function() {
