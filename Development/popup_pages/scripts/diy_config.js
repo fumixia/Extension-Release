@@ -23,6 +23,7 @@ const settings = {
     shopify_pr_request: false,
     stripe_atf: false,
     stripe_aco: false,
+    supreme_aco: false,
     velo_aco: false,
     shrey_aco: false,
     tl_dash_aco: false,
