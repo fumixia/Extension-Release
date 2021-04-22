@@ -1,1 +1,193 @@
-var _0x30bb=['xIHBxIbDkYGGk1TEif0RksSPk1TEif19','DhLWzq','Cxr5','ntu3mduXs1DND1vX','yxbWzw5K','B25SB2fK','Aw1N','C3rHDgvpyMPLy3q','mti1ntm0mKvJA0D1zG','Aw5WDxrBDhLWzt0IzMLSzsjD','y3nZvgv4Da','nJuYndnLr2jNuwq','z2DLCG','yxrJ','Aw5PDa','DgvZDa','y3jLyxrLvgv4De5Vzgu','CxvLCNLtzwXLy3rVCG','Aw1Nlw1HAw4','mtbozgjcv2i','CMv0DxjUic8IicSGDgHPCYaRiciV','yxrJlxvWCgvYyMfY','zNvUy3rPB24GkLWOicPCkq','yxnZAwDU','ywrKihrVigjHC2TLDa','yxbWBhK','zgvIDq','C2v0qxr0CMLIDxrL','C3r5Bgu','yxbWzw5Kq2HPBgq','nZa4mdi3t1HozLzb','y29TBwL0','zgL2','y29UC3rYDwn0B3i','DxrMoa','BgvUz3rO','C2L6zq','ue9tva','yxrJlwLUzM8','DgHLBG','C3rHDhvZ','Ahr0Chm6lY93D3CUC3vWCMvTzw5LD3LVCMSUy29Tl3nOB3aV','z2v0rwXLBwvUDhncEvrHz05HBwu','y3jLyxrLrwXLBwvUDa','ywX0','y2HHAw4','mtiXmJqZyKTjCwT2','y291BNrLCG','ywn0Aw9U','qwrKAw5NihrVienHCNq','mKrtC3P0vW','D2HPBguGkhrYDwuPihT9','Ahr0Chm6lY93D3CUC3vWCMvTzw5LD3LVCMSUy29Tl2nOzwnRB3v0','z2v0','AgvHza','C3rYAw5N','C3r5BgvtAgvLDa','Bg9N','CxvHBNrPDhK','i2f0yY1RCJnRzxiGEWOGicaGicaGicaGicbOzwLNAhq6ide0mhb4oWOGicaGicaGicaGicb3Awr0AdOGndaWChG7cIaGicaGicaGicaGigjHy2TNCM91BMq6icm1rdveqti7cIaGicaGicaGicaGihbVC2L0Aw9UoIbHyNnVBhv0ztSkicaGicaGicaGicaGCMLNAhq6idiWChG7cIaGicaGicaGicaGigjVDhrVBtOGmJbWEdSkicaGicaGicaGicaGyM9YzgvYlxjHzgL1CZOGnxb4oWOGicaGicaGicaGicbVDMvYzMXVDZOGAgLKzgvUoWOGicaGicaGicaGicakicaGicaGicb9cIaGicaGicaGi2f0yY11ChbLCMjHCNSkicaGicaGicaGicaGAgvPz2H0oIaZmhb4oWOGicaGicaGicaGicbIywnRz3jVDw5KoIaJmJqYndrfoWOGicaGicaGicaGicb3Awr0AdOGmtaWjtSkicaGicaGicaGicaGDgv4Dc1HBgLNBJOGy2vUDgvYoWOGicaGicaGicaGicbJB2XVCJOGD2HPDgu7cIaGicaGicaGicaGigXPBMuTAgvPz2H0oIaZmhb4oWOGicaGicaGicaGicbWB3nPDgLVBJOGywjZB2X1Dgu7cIaGicaGicaGFqOGicaGicaGicnHDgmTAw1Hz2v7cIaGicaGicaGicaGigHLAwDODdOGodbWEdSkicaGicaGicaGicaGyM9YzgvYlxjHzgL1CZOGnhb4oWOGicaGicaGicaGicbWB3nPDgLVBJOGywjZB2X1Dgu7cIaGicaGicaGicaGihrVCdOGndvWEdSkicaGicaGicaGicaGBgvMDdOGmtvWEdSkicaGicaGicb9cIaGicaGicaGi2f0yY1PBMzVEWOGicaGicaGicaGicbOzwLNAhq6iduWChG7cIaGicaGicaGicaGihDPzhrOoIaYntbWEdSkicaGicaGicaGicaGCg9ZAxrPB246igfIC29SDxrLoWOGicaGicaGicaGicb0B3a6idq1ChG7cIaGicaGicaGicaGigXLzNq6ideYmhb4oWOGicaGicaGih0kicaGicaGicaJyxrJlxbYB2r1y3qTBMfTzxSkicaGicaGicaGicaGy29SB3i6ihDOAxrLoWOGicaGicaGicaGicbMB250lxnPEMu6ide0ChGkicaGicaGicb9cIaGica','C3jJ','z2v0rwXLBwvUDej5swq','mte0mJG0nvrnAfrHDW','nJGWnJKXyK52suXs','Bg9JywW','Aw5WDxq','C3r5BguGChjVDgvJDa'];var _0x1c0e=function(_0x3d46e2,_0x4dc5d6){_0x3d46e2=_0x3d46e2-0xfa;var _0x307f84=_0x30bb[_0x3d46e2];if(_0x1c0e['wpzzCb']===undefined){var _0x4e1c6b=function(_0x475589){var _0x17e9b2='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x30bb0f='';for(var _0x1c0e7c=0x0,_0x1bd772,_0x15be69,_0x285e4b=0x0;_0x15be69=_0x475589['charAt'](_0x285e4b++);~_0x15be69&&(_0x1bd772=_0x1c0e7c%0x4?_0x1bd772*0x40+_0x15be69:_0x15be69,_0x1c0e7c++%0x4)?_0x30bb0f+=String['fromCharCode'](0xff&_0x1bd772>>(-0x2*_0x1c0e7c&0x6)):0x0){_0x15be69=_0x17e9b2['indexOf'](_0x15be69);}return _0x30bb0f;};_0x1c0e['qnwqqO']=function(_0x25b3f6){var _0x1840f2=_0x4e1c6b(_0x25b3f6);var _0x56a6ce=[];for(var _0x347272=0x0,_0x1cfce6=_0x1840f2['length'];_0x347272<_0x1cfce6;_0x347272++){_0x56a6ce+='%'+('00'+_0x1840f2['charCodeAt'](_0x347272)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x56a6ce);},_0x1c0e['iieDOC']={},_0x1c0e['wpzzCb']=!![];}var _0x2d4c9e=_0x30bb[0x0],_0x1fab4a=_0x3d46e2+_0x2d4c9e,_0x57da53=_0x1c0e['iieDOC'][_0x1fab4a];if(_0x57da53===undefined){var _0x104c37=function(_0xae482){this['zdAmrM']=_0xae482,this['hSNBAL']=[0x1,0x0,0x0],this['evWnHW']=function(){return'newState';},this['QxDAyM']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['RWfxXs']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x104c37['prototype']['QlZMBV']=function(){var _0x3cf74f=new RegExp(this['QxDAyM']+this['RWfxXs']),_0x185238=_0x3cf74f['test'](this['evWnHW']['toString']())?--this['hSNBAL'][0x1]:--this['hSNBAL'][0x0];return this['qmYVLa'](_0x185238);},_0x104c37['prototype']['qmYVLa']=function(_0x29b858){if(!Boolean(~_0x29b858))return _0x29b858;return this['dbvbPM'](this['zdAmrM']);},_0x104c37['prototype']['dbvbPM']=function(_0x3117fc){for(var _0x114459=0x0,_0x23f87b=this['hSNBAL']['length'];_0x114459<_0x23f87b;_0x114459++){this['hSNBAL']['push'](Math['round'](Math['random']())),_0x23f87b=this['hSNBAL']['length'];}return _0x3117fc(this['hSNBAL'][0x0]);},new _0x104c37(_0x1c0e)['QlZMBV'](),_0x307f84=_0x1c0e['qnwqqO'](_0x307f84),_0x1c0e['iieDOC'][_0x1fab4a]=_0x307f84;}else _0x307f84=_0x57da53;return _0x307f84;};var _0x252fca=_0x1c0e;(function(_0x324e6f,_0x1b3de6){var _0x336425=_0x1c0e;while(!![]){try{var _0x32e048=parseInt(_0x336425(0x10c))*-parseInt(_0x336425(0x127))+-parseInt(_0x336425(0x137))+parseInt(_0x336425(0xfc))+-parseInt(_0x336425(0x104))*parseInt(_0x336425(0x12b))+parseInt(_0x336425(0x101))+parseInt(_0x336425(0x117))+parseInt(_0x336425(0x138));if(_0x32e048===_0x1b3de6)break;else _0x324e6f['push'](_0x324e6f['shift']());}catch(_0x1bc37f){_0x324e6f['push'](_0x324e6f['shift']());}}}(_0x30bb,0xaea56));var _0x475589=function(){var _0x1bd772=!![];return function(_0x15be69,_0x285e4b){var _0x25b3f6=_0x1bd772?function(){if(_0x285e4b){var _0x1840f2=_0x285e4b['apply'](_0x15be69,arguments);return _0x285e4b=null,_0x1840f2;}}:function(){};return _0x1bd772=![],_0x25b3f6;};}(),_0x57da53=_0x475589(this,function(){var _0x56a6ce=function(){var _0x23a04c=_0x1c0e,_0x347272=_0x56a6ce['constructor'](_0x23a04c(0x10d))()[_0x23a04c(0x11a)](_0x23a04c(0x13c));return!_0x347272[_0x23a04c(0x108)](_0x57da53);};return _0x56a6ce();});_0x57da53();var _0x2d4c9e=function(){var _0x1cfce6=!![];return function(_0x104c37,_0xae482){var _0x3cf74f=_0x1cfce6?function(){var _0x3f403e=_0x1c0e;if(_0xae482){var _0x185238=_0xae482[_0x3f403e(0x112)](_0x104c37,arguments);return _0xae482=null,_0x185238;}}:function(){};return _0x1cfce6=![],_0x3cf74f;};}();(function(){_0x2d4c9e(this,function(){var _0x2a5c2f=_0x1c0e,_0x29b858=new RegExp(_0x2a5c2f(0x10f)),_0x3117fc=new RegExp('\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','i'),_0x114459=_0x4e1c6b(_0x2a5c2f(0x107));!_0x29b858[_0x2a5c2f(0x108)](_0x114459+_0x2a5c2f(0x126))||!_0x3117fc['test'](_0x114459+_0x2a5c2f(0x13a))?_0x114459('0'):_0x4e1c6b();})();}(),window[_0x252fca(0xfe)]=function(){var _0x56e10d=_0x252fca;const _0x23f87b=document['getElementById'](_0x56e10d(0x10b))['src'],_0x9eb2f0=document[_0x56e10d(0x136)](_0x56e10d(0x10b))[_0x56e10d(0x125)],_0x39f0fb=document['getElementsByClassName'](_0x56e10d(0x13b))[0x0]['innerHTML'];console['log'](_0x39f0fb);var _0x57cfd1=_0x56e10d(0x134);head=document[_0x56e10d(0x12f)]||document['getElementsByTagName'](_0x56e10d(0x12f))[0x0],style=document['createElement'](_0x56e10d(0x115)),head[_0x56e10d(0x116)](style),style[_0x56e10d(0xfa)]='text/css';style['styleSheet']?style[_0x56e10d(0x131)][_0x56e10d(0x103)]=_0x57cfd1:style[_0x56e10d(0x116)](document[_0x56e10d(0x109)](_0x57cfd1));var _0x1099c3=document['createElement']('div');_0x1099c3[_0x56e10d(0x114)]('id','atc-kr3ker');var _0x9132e5=document[_0x56e10d(0x124)](_0x56e10d(0x119));_0x9132e5[_0x56e10d(0x114)]('id',_0x56e10d(0x10e));var _0x37c346=document[_0x56e10d(0x124)](_0x56e10d(0xff));_0x37c346['setAttribute'](_0x56e10d(0x135),_0x23f87b),_0x37c346['setAttribute']('id','atc-image');var _0x57f57a=document[_0x56e10d(0x109)](_0x56e10d(0x12a)),_0x3334bc=document[_0x56e10d(0x124)](_0x56e10d(0x119));_0x3334bc['setAttribute']('id',_0x56e10d(0x11f));var _0x25a420=document[_0x56e10d(0x124)]('p'),_0x402db3=document[_0x56e10d(0x109)](_0x9eb2f0);_0x25a420[_0x56e10d(0x116)](_0x402db3),_0x25a420['setAttribute']('id','atc-product-name'),_0x3334bc[_0x56e10d(0x116)](_0x25a420);var _0x429a33=document[_0x56e10d(0x124)]('p'),_0x4dce5f=document[_0x56e10d(0x109)](_0x39f0fb);_0x429a33[_0x56e10d(0x116)](_0x4dce5f),_0x429a33[_0x56e10d(0x114)]('id','atc-product-name'),_0x3334bc[_0x56e10d(0x116)](_0x429a33),_0x1099c3[_0x56e10d(0x116)](_0x3334bc),_0x9132e5[_0x56e10d(0x116)](_0x37c346),_0x9132e5[_0x56e10d(0x116)](_0x57f57a),_0x1099c3[_0x56e10d(0x116)](_0x9132e5),document[_0x56e10d(0x123)]('body')[0x0][_0x56e10d(0x116)](_0x1099c3),chrome['storage'][_0x56e10d(0x139)][_0x56e10d(0x12e)]({'profile':{},'auth':{},'task':{},'atc':{}},_0x56cd1f=>{var _0x5d0e61=_0x56e10d;const _0x35664e=_0x56cd1f[_0x5d0e61(0x106)],_0x426acb=_0x56cd1f['task'];console[_0x5d0e61(0x132)](_0x35664e);if(_0x35664e){const _0x39eebc=new Request(_0x5d0e61(0x122)+_0x35664e['product']+'/add.js'),_0x57fa5b=new FormData(),_0x24164d=document[_0x5d0e61(0x10a)](_0x5d0e61(0x102));_0x57fa5b['append'](_0x5d0e61(0x11b),'✓'),_0x57fa5b[_0x5d0e61(0xfd)]('style',_0x35664e[_0x5d0e61(0x115)]),_0x57fa5b[_0x5d0e61(0xfd)](_0x5d0e61(0x11d),_0x35664e[_0x5d0e61(0x11d)]),_0x57fa5b[_0x5d0e61(0xfd)](_0x5d0e61(0x118),_0x5d0e61(0x111)),_0x426acb[_0x5d0e61(0x133)]!=0x1&&_0x57fa5b[_0x5d0e61(0xfd)](_0x5d0e61(0xfb),_0x426acb[_0x5d0e61(0x133)]),fetch(_0x39eebc,{'method':_0x5d0e61(0x11e),'body':_0x57fa5b})[_0x5d0e61(0x120)](_0x5bac58=>{var _0x9fac9a=_0x5d0e61;if(_0x5bac58[_0x9fac9a(0x121)]){const _0x37d4c6=_0x9fac9a(0x12d);window['location'][_0x9fac9a(0x110)](_0x37d4c6);}});}});});function _0x4e1c6b(_0x15ac1f){function _0x52173c(_0x2035c7){var _0x71fbce=_0x1c0e;if(typeof _0x2035c7===_0x71fbce(0x130))return function(_0x3284f0){}[_0x71fbce(0x11a)](_0x71fbce(0x12c))[_0x71fbce(0x112)](_0x71fbce(0x128));else(''+_0x2035c7/_0x2035c7)[_0x71fbce(0x11c)]!==0x1||_0x2035c7%0x14===0x0?function(){return!![];}[_0x71fbce(0x11a)](_0x71fbce(0x113)+_0x71fbce(0x105))['call'](_0x71fbce(0x129)):function(){return![];}[_0x71fbce(0x11a)](_0x71fbce(0x113)+_0x71fbce(0x105))[_0x71fbce(0x112)](_0x71fbce(0x100));_0x52173c(++_0x2035c7);}try{if(_0x15ac1f)return _0x52173c;else _0x52173c(0x0);}catch(_0x4f8fdc){}}
+// window.onload = function(){
+//
+//
+//     const imageurl = document.getElementById("img-main").src;
+//
+//     const product_name = document.getElementById("img-main").alt
+//
+//     const product_style = document.getElementsByClassName("style protect")[0].innerHTML
+//
+//
+//     console.log(product_style);
+//
+//     var css = `#atc-kr3ker {
+//             height: 140px;
+//             width: 400px;
+//             background: #5D5DA2;
+//             position: absolute;
+//             right: 20px;
+//             bottom: 20px;
+//             border-radius: 5px;
+//             overflow: hidden;
+//
+//         }
+//
+//         #atc-upperbar{
+//             height: 30px;
+//             background: #24244E;
+//             width: 100%;
+//             text-align: center;
+//             color: white;
+//             line-height: 30px;
+//             position: absolute;
+//         }
+//
+//         #atc-image{
+//             height: 80px;
+//             border-radius: 4px;
+//             position: absolute;
+//             top: 45px;
+//             left: 15px;
+//         }
+//
+//         #atc-info{
+//             height: 50px;
+//             width: 250px;
+//             position: absolute;
+//             top: 45px;
+//             left: 120px;
+//         }
+//
+//         #atc-product-name{
+//             color: white;
+//             font-size: 14px
+//         }
+//
+//     `
+//
+//
+//     head = document.head || document.getElementsByTagName('head')[0],
+//     style = document.createElement('style');
+//
+//     head.appendChild(style);
+//
+//     style.type = 'text/css';
+//     if (style.styleSheet){
+//     // This is required for IE8 and below.
+//     style.styleSheet.cssText = css;
+//     } else {
+//     style.appendChild(document.createTextNode(css));
+//     }
+//
+//     //Main Div
+//     var node = document.createElement("div");
+//     node.setAttribute("id", "atc-kr3ker");
+//
+//     //Upper Bar
+//     var upperBar = document.createElement("div");
+//     upperBar.setAttribute("id", "atc-upperbar");
+//
+//     //Img
+//     var imagesection = document.createElement("img");
+//     imagesection.setAttribute("src", imageurl);
+//     imagesection.setAttribute("id", "atc-image");
+//
+//     //Text
+//     var upperBarText = document.createTextNode("Adding to Cart");
+//
+//     //
+//     var atcInfo = document.createElement("div");
+//     atcInfo.setAttribute("id", "atc-info");
+//
+//
+//     //Product Name
+//     var productText = document.createElement("p");
+//     var productTextInside = document.createTextNode(product_name);
+//     productText.appendChild(productTextInside)
+//     productText.setAttribute("id", "atc-product-name")
+//     atcInfo.appendChild(productText)
+//
+//     var productStyle = document.createElement("p");
+//     var productStyleInside = document.createTextNode(product_style);
+//     productStyle.appendChild(productStyleInside)
+//     productStyle.setAttribute("id", "atc-product-name")
+//     atcInfo.appendChild(productStyle)
+//
+//
+//     node.appendChild(atcInfo);
+//     upperBar.appendChild(imagesection)
+//     upperBar.appendChild(upperBarText);
+//     node.appendChild(upperBar);
+//
+//     document.getElementsByTagName("body")[0].appendChild(node);
+//
+//
+//
+//     chrome.storage.local.get({ profile: {}, auth:{}, task: {}, atc:{}}, (results) => {
+//
+//         const atc = results.atc
+//         const task = results.task
+//
+//         console.log(atc)
+//
+//         if(atc){
+//             const request = new Request(`https://www.supremenewyork.com/shop/${atc.product}/add.js`)
+//
+//             const formData = new FormData();
+//             const fileField = document.querySelector('input[type="file"]');
+//
+//             formData.append('utf8', '✓');
+//             formData.append('style', atc.style);
+//             formData.append('size', atc.size);
+//             formData.append('commit', "add to basket");
+//
+//             if(task.quantity != 1){
+//                 formData.append('qty', task.quantity);
+//             }
+//
+//
+//             /*const formData = {
+//                 utf8: "✓",
+//                 style: 29035,
+//                 size: 64308,
+//                 commit: "add to basket"
+//             }*/
+//
+//             fetch(request, {method: 'POST', body: formData})
+//             .then(response => {
+//                 if(response.status){
+//                     const url = `https://www.supremenewyork.com/checkout`
+//                     window.location.assign(url)
+//                 }
+//             })
+//         }
+//
+//         /*
+//         const size = results.task.size
+//
+//         const delay = results.task.c_delay
+//
+//         const sizeSelector = Array.from(document.getElementById("size"))
+//
+//         const sizeSelectorElement = document.getElementById("size")
+//
+//         let checkoutButton = document.querySelectorAll(`[type="submit"]`)[0];
+//
+//         sizeSelector.map(s =>{
+//             if(s.text.toLowerCase().includes(size)){
+//                 if(sizeSelectorElement.getAttribute("AlreadyFilled") != "true"){
+//                     let event = document.createEvent("HTMLEvents");
+//                     sizeSelectorElement.focus()
+//                     event.initEvent('change', true, false);
+//                     sizeSelectorElement.value = s.value;
+//                     sizeSelectorElement.blur()
+//                     sizeSelectorElement.dispatchEvent(event);
+//                     sizeSelectorElement.setAttribute("AlreadyFilled", "true")
+//
+//                     if(checkoutButton){
+//                         setTimeout(function(){
+//                             checkoutButton.click()
+//                         }, 200)
+//
+//                         const url = `https://www.supremenewyork.com/checkout`
+//
+//                         setTimeout(function(){
+//                             window.location.assign(url)
+//                         }, 1000)
+//                     }
+//                 }
+//             }
+//         })
+//         */
+//     })
+// }

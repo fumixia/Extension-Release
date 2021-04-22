@@ -1,4 +1,3 @@
-
 let style = document.createElement('style');
 
 style.innerHTML =

@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "TweetNinja Extension",
 	"description": "An extension developed by @TweetNinjaLLC",
-	"version": "3.0.90",
+	"version": "3.1.0",
 	"icons": {
 		"128": "./icons/logo.png"
 	},
@@ -193,6 +193,15 @@
 			],
 			"js": [
 				"scripts/captcha.js"
+			],
+			"all_frames": true
+		},
+		{
+			"matches":[
+				"https://www.supremenewyork.com/checkout"
+			],
+			"js":[
+				"scripts/supreme.js"
 			],
 			"all_frames": true
 		},

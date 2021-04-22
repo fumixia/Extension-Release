@@ -75,7 +75,7 @@ test_webhook.addEventListener("click", function() {
             /*thumbnail: {
                 url: logo
             },*/
-            fields: [
+            fields: [
                 {
                     name: "**Selected Profile**",
                     value: `||${profile.profileName}||`
@@ -133,3 +133,5 @@ function notificationDisplay(msg) {
         }
     }
 }
+
+

@@ -40,3 +40,7 @@
 .diy_type_select {
     width: 32%
 }
+
+.diy_type_select:focus {
+    margin: -1px;
+}
