@@ -54,8 +54,8 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         monitorState = message.data.supreme_start;
         selectedProductData = null;
         let currentTime = new Date();
-        const positiveKeys = message.data.supreme_positive_keywords.replaceAll(' ', '').split(',');
-        const negativeKeys = message.data.supreme_negative_keywords.replaceAll(' ', '').split(',');
+        const positiveKeys = message.data.supreme_positive_keywords !== "" ? message.data.supreme_positive_keywords.replaceAll(' ', '').split(',') : [];
+        const negativeKeys = message.data.supreme_negative_keywords !== "" ? message.data.supreme_negative_keywords.replaceAll(' ', '').split(',') : [];
 
         const diff = (currentTime.getTime() - timeCount.getTime()) / 1000;
         timeCount = currentTime;
@@ -70,6 +70,8 @@ async function monitor(data, positiveKeys, negativeKeys) {
     if (monitorState) {
         return
     }
+
+    console.log('---monitoring product---');
 
     setTimeout(async () => {
         if (monitorState) {
@@ -99,12 +101,16 @@ async function selectProduct(data, positiveKeys, negativeKeys) {
     for (let i = 0; i < products.length; i++) {
         products[i].negative = 0;
         products[i].positive = 0;
-        for (let j = 0; j < negativeKeys.length; j++) {
-            if (products[i].name.toLowerCase().includes(negativeKeys[j].toLowerCase())) {
-                products[i].negative = 1;
+
+        if (negativeKeys.length > 0) {
+            for (let j = 0; j < negativeKeys.length; j++) {
+                if (products[i].name.toLowerCase().includes(negativeKeys[j].toLowerCase())) {
+                    products[i].negative = 1;
+                }
             }
         }
-        if (products[i].negative !== 1) {
+
+        if (products[i].negative !== 1 && positiveKeys.length > 0) {
             for (let k = 0; k < positiveKeys.length; k++) {
                 if (products[i].name.toLowerCase().includes(positiveKeys[k].toLowerCase())) {
                     products[i].positive = products[i].positive + 1;
@@ -134,6 +140,8 @@ async function checkProductStatus(product, data, positiveKeys, negativeKeys) {
         return
     }
 
+    console.log('---checking product stock---');
+
     const productDetailsStm = await fetch(`https://www.supremenewyork.com/shop/${product.id}.json`);
     const productDetail = await productDetailsStm.json();
 
@@ -141,13 +149,15 @@ async function checkProductStatus(product, data, positiveKeys, negativeKeys) {
         style.positive = 0;
         style.negative = 0;
 
-        negativeKeys.forEach(negativeKey => {
-            if (negativeKey.toLowerCase().includes(style.name.toLowerCase())) {
-                style.negative = 1
-            }
-        });
+        if (negativeKeys.length > 0) {
+            negativeKeys.forEach(negativeKey => {
+                if (negativeKey.toLowerCase().includes(style.name.toLowerCase())) {
+                    style.negative = 1
+                }
+            });
+        }
 
-        if (style.negative !== 1) {
+        if (style.negative !== 1 && positiveKeys.length > 0) {
             positiveKeys.forEach(positiveKey => {
                 if (positiveKey.toLowerCase().includes(style.name.toLowerCase())) {
                     style.positive = style.positive + 1;

@@ -22,6 +22,7 @@ const settings = {
     shrey_aco: false,
     tl_dash_aco: false,
     tl_dash_request: false,
+    mercury_aco: false,
     freddy_dash_aco_dom: false,
     freddy_dash_aco_request: false,
     meta_aco: false,

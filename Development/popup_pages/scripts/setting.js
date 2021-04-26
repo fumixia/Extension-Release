@@ -18,6 +18,7 @@ const velo_aco = document.getElementById("velo_aco");
 const shrey_aco = document.getElementById("shrey_aco");
 const tl_dash_aco = document.getElementById("tl_dash_aco");
 const tl_dash_request = document.getElementById("tl_dash_request");
+const mercury_aco = document.getElementById("mercury_aco");
 const freddy_dash_aco_dom = document.getElementById("freddy_dash_aco_dom");
 const freddy_dash_aco_request = document.getElementById("freddy_dash_aco_request");
 const multi_meta_aco = document.getElementById("multi_meta_aco");
@@ -48,6 +49,7 @@ const settings = {
     shrey_aco: false,
     tl_dash_aco: false,
     tl_dash_request: false,
+    mercury_aco: false,
     freddy_dash_aco_dom: false,
     freddy_dash_aco_request: false,
     multi_meta_aco: false,
@@ -81,6 +83,7 @@ function initSetting() {
         shrey_aco.className = setting.shrey_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         tl_dash_aco.className = setting.tl_dash_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         tl_dash_request.className = setting.tl_dash_request ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
+        mercury_aco.className = setting.mercury_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         freddy_dash_aco_dom.className = setting.freddy_dash_aco_dom ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         freddy_dash_aco_request.className = setting.freddy_dash_aco_request ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
         multi_meta_aco.className = setting.multi_meta_aco ? 'button-setting-dashboard active-setting' : 'button-setting-dashboard';
@@ -414,6 +417,32 @@ tl_dash_request.addEventListener('click', function() {
             tl_dash_request.className = 'button-setting-dashboard';
         } else {
             tl_dash_request.className = 'button-setting-dashboard active-setting';
+        }
+    })
+});
+
+mercury_aco.addEventListener('click', function() {
+    storage.get({settings: {}}, function(result) {
+        if (result.settings.mercury_aco !== undefined) {
+            storage.set({
+                settings: {
+                    ...result.settings,
+                    mercury_aco: result.settings.mercury_aco ? false : true
+                }
+            });
+        } else {
+            storage.set({
+                settings: {
+                    ...settings,
+                    mercury_aco: true,
+                }
+            });
+        }
+
+        if (result.settings.mercury_aco) {
+            mercury_aco.className = 'button-setting-dashboard';
+        } else {
+            mercury_aco.className = 'button-setting-dashboard active-setting';
         }
     })
 });

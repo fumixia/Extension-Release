@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "TweetNinja Extension",
 	"description": "An extension developed by @TweetNinjaLLC",
-	"version": "3.1.0",
+	"version": "3.1.1",
 	"icons": {
 		"128": "./icons/logo.png"
 	},
@@ -211,6 +211,16 @@
 			],
 			"js":[
 				"scripts/discord_auth.js"
+			],
+			"all_frames": true
+		},
+		{
+			"matches":[
+				"https://www.mercuryaio.com/?password*"
+			],
+			"js":[
+				"scripts/modules/mercuryaio.js",
+				"scripts/toasts.js"
 			],
 			"all_frames": true
 		}
