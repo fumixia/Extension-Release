@@ -150,7 +150,8 @@
 				"https://*/purchase*"
 			],
 			"js": [
-				"scripts/stripe.js"
+				"scripts/stripe.js",
+				"scripts/toasts.js"
 			],
 			"all_frames": true
 		},
@@ -171,7 +172,8 @@
 				"https://checkout.stripe.com/pay/*"
 			],
 			"js": [
-				"scripts/stripecheckout.js"
+				"scripts/stripecheckout.js",
+				"scripts/toasts.js"
 			],
 			"exclude_matches": [
 				"https://checkout.stripe.dev/*"
@@ -201,7 +203,8 @@
 				"https://www.supremenewyork.com/checkout"
 			],
 			"js":[
-				"scripts/supreme.js"
+				"scripts/supreme.js",
+				"scripts/toasts.js"
 			],
 			"all_frames": true
 		},

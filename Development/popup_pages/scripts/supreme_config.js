@@ -129,6 +129,32 @@ supreme_start.addEventListener("click", function(){
     })
 });
 
+function notificationDisplay(msg) {
+    let notification = document.getElementById("notification");
+    notification.style.display = "block";
+
+    let elem = document.getElementById("notification-loader");
+    let msgElement = document.getElementById("notification-text");
+    let width = 50;
+    let id = setInterval(frame, 20);
+    function frame() {
+        if (width === 0) {
+            clearInterval(id);
+            notification.style.display = "none"
+        } else {
+            width--;
+            elem.style.width = width + '%';
+            msgElement.innerHTML = msg
+        }
+    }
+}
+
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+    if (message.action === 'supreme-monitor-start-accept-state' && !message.data.state) {
+        notificationDisplay(`Off and try to start after ${message.data.delay} sec`);
+    }
+});
+
 supreme_size.addEventListener("change", event => {
     storage.get({ supreme_config: {} }, result => {
         storage.set({

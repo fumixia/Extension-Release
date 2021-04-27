@@ -61,6 +61,11 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         timeCount = currentTime;
         if (diff > parseInt(message.data.supreme_delay)/1000) {
             monitor(message.data, positiveKeys, negativeKeys);
+        } else {
+            chrome.runtime.sendMessage({ action: 'supreme-monitor-start-accept-state', data: {
+                delay: parseInt(message.data.supreme_delay)/1000,
+                state: message.data.supreme_start
+            }});
         }
     }
 });
@@ -177,13 +182,13 @@ async function checkProductStatus(product, data, positiveKeys, negativeKeys) {
         const selectedStyle = availableStyles[0];
 
         selectedStyle.sizes.forEach(size => {
-            if ((size.name.toLowerCase() === data.supreme_size || size.name === "N/A") && size.stock_level === 1) {
+            if ((size.name.toLowerCase() === data.supreme_size || size.name === "N/A" || data.supreme_size === "random") && size.stock_level === 1) {
                 chrome.tabs.create({url: `https://www.supremenewyork.com/shop/${product.id}`}, (tab) => {
                     chrome.tabs.sendMessage(tab.id, {ping: true}, res => {
                         if (res && res.pong) {
                             chrome.tabs.sendMessage(tab.id, {action: 'supreme-monitor-result', data: {
                                 style: selectedStyle.id,
-                                size: size.id,
+                                size: size.name !== "N/A" ? size.id : "N/A",
                                 config: data
                             }});
 
@@ -198,7 +203,7 @@ async function checkProductStatus(product, data, positiveKeys, negativeKeys) {
                                 // OK, now it's injected and ready
                                 chrome.tabs.sendMessage(tab.id, {action: 'supreme-monitor-result', data: {
                                     style: selectedStyle.id,
-                                    size: size.id,
+                                    size: size.name !== "N/A" ? size.id : "N/A",
                                     config: data
                                 }});
 
