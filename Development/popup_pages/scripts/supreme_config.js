@@ -151,7 +151,7 @@ function notificationDisplay(msg) {
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     if (message.action === 'supreme-monitor-start-accept-state' && !message.data.state) {
-        notificationDisplay(`Off and try to start after ${message.data.delay} sec`);
+        notificationDisplay(`Sorry, Please restart after ${message.data.delay} sec!`);
     }
 });
 
