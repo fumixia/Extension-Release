@@ -105,14 +105,15 @@ supreme_start.addEventListener("click", function(){
                     ...result.supreme_config,
                     supreme_start: result.supreme_config.supreme_start ? false : true
                 }
+            }, () => {
+                if (!result.supreme_config.supreme_start) {
+                    supreme_start.classList.add('active-state');
+                    chrome.runtime.sendMessage({ action: 'supreme-monitor-start', data: result.supreme_config });          //send to background monitor start
+                } else {
+                    supreme_start.classList.remove('active-state');
+                    chrome.runtime.sendMessage({ action: 'supreme-monitor-start', data: result.supreme_config });          //send to background monitor stop
+                }
             });
-            if (!result.supreme_config.supreme_start) {
-                supreme_start.classList.add('active-state');
-                chrome.runtime.sendMessage({ action: 'supreme-monitor-start', data: result.supreme_config });          //send to background monitor start
-            } else {
-                supreme_start.classList.remove('active-state');
-                chrome.runtime.sendMessage({ action: 'supreme-monitor-start', data: result.supreme_config });          //send to background monitor stop
-            }
         } else {
             storage.set({
                 settings: {
@@ -122,6 +123,14 @@ supreme_start.addEventListener("click", function(){
                 supreme_config: {
                     ...result.supreme_config,
                     supreme_start: true
+                }
+            }, () => {
+                if (!result.supreme_config.supreme_start) {
+                    supreme_start.classList.add('active-state');
+                    chrome.runtime.sendMessage({ action: 'supreme-monitor-start', data: result.supreme_config });          //send to background monitor start
+                } else {
+                    supreme_start.classList.remove('active-state');
+                    chrome.runtime.sendMessage({ action: 'supreme-monitor-start', data: result.supreme_config });          //send to background monitor stop
                 }
             });
             supreme_start.classList.add('active-state');
@@ -214,9 +223,9 @@ function initSupreme() {
     storage.get({supreme_config: {}, settings: {}}, result => {
         const supreme_config = result.supreme_config;
 
-        supreme_size.value = supreme_config.supreme_size ? supreme_config.supreme_size : 'default';
-        supreme_category.value = supreme_config.supreme_category ? supreme_config.supreme_category : 'default';
-        supreme_delay.value = supreme_config.supreme_delay ? supreme_config.supreme_delay : 'default';
+        supreme_size.value = supreme_config.supreme_size ? supreme_config.supreme_size : '';
+        supreme_category.value = supreme_config.supreme_category ? supreme_config.supreme_category : '';
+        supreme_delay.value = supreme_config.supreme_delay ? supreme_config.supreme_delay : '';
         supreme_positive_keywords.value = supreme_config.supreme_positive_keywords ? supreme_config.supreme_positive_keywords : '';
         supreme_negative_keywords.value = supreme_config.supreme_negative_keywords ? supreme_config.supreme_negative_keywords : '';
 
@@ -227,23 +236,3 @@ function initSupreme() {
 }
 
 initSupreme();
-
-function notificationDisplay(msg) {
-    let notification = document.getElementById("notification");
-    notification.style.display = "block";
-
-    let elem = document.getElementById("notification-loader");
-    let msgElement = document.getElementById("notification-text");
-    let width = 50;
-    let id = setInterval(frame, 20);
-    function frame() {
-        if (width === 0) {
-            clearInterval(id);
-            notification.style.display = "none"
-        } else {
-            width--;
-            elem.style.width = width + '%';
-            msgElement.innerHTML = msg
-        }
-    }
-}

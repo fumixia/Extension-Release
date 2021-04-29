@@ -47,18 +47,19 @@ setInterval(() => {
 
 let monitorState = false;
 let selectedProductData = null;
-let timeCount = new Date();
+let timeCount = new Date('July 4 1776 12:30');
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     if (message.action === 'supreme-monitor-start') {
         monitorState = message.data.supreme_start;
         selectedProductData = null;
         let currentTime = new Date();
-        const positiveKeys = message.data.supreme_positive_keywords !== "" ? message.data.supreme_positive_keywords.replaceAll(' ', '').split(',') : [];
-        const negativeKeys = message.data.supreme_negative_keywords !== "" ? message.data.supreme_negative_keywords.replaceAll(' ', '').split(',') : [];
+        const positiveKeys = message.data.supreme_positive_keywords && message.data.supreme_positive_keywords !== "" ? message.data.supreme_positive_keywords.replace(/\s/g, '').split(',') : [];
+        const negativeKeys = message.data.supreme_negative_keywords && message.data.supreme_negative_keywords !== "" ? message.data.supreme_negative_keywords.replace(/\s/g, '').split(',') : [];
 
         const diff = (currentTime.getTime() - timeCount.getTime()) / 1000;
         timeCount = currentTime;
+
         if (diff > parseInt(message.data.supreme_delay)/1000) {
             monitor(message.data, positiveKeys, negativeKeys);
         } else {
@@ -84,17 +85,17 @@ async function monitor(data, positiveKeys, negativeKeys) {
         }
 
         if (selectedProductData !== null) {
-            await checkProductStatus(selectedProductData, data, positiveKeys, negativeKeys);
+            await checkProductStatus(selectedProductData, data, positiveKeys, negativeKeys, delayTime);
             return;
         }
 
-        await selectProduct(data, positiveKeys, negativeKeys);
+        await selectProduct(data, positiveKeys, negativeKeys, delayTime);
 
         await monitor(data, positiveKeys, negativeKeys);
     }, delayTime);
 }
 
-async function selectProduct(data, positiveKeys, negativeKeys) {
+async function selectProduct(data, positiveKeys, negativeKeys, delayTime) {
     if (monitorState) {
         return
     }
@@ -136,11 +137,11 @@ async function selectProduct(data, positiveKeys, negativeKeys) {
 
         selectedProductData = selectedProduct;
 
-        checkProductStatus(selectedProduct, data, positiveKeys, negativeKeys);
+        checkProductStatus(selectedProduct, data, positiveKeys, negativeKeys, delayTime);
     }
 }
 
-async function checkProductStatus(product, data, positiveKeys, negativeKeys) {
+async function checkProductStatus(product, data, positiveKeys, negativeKeys, delayTime) {
     if (monitorState) {
         return
     }
@@ -218,7 +219,13 @@ async function checkProductStatus(product, data, positiveKeys, negativeKeys) {
                     })
                 });
             }
-        })
+        });
+
+        if (!monitorState) {
+            setTimeout(() => {
+                checkProductStatus(product, data, positiveKeys, negativeKeys, delayTime);
+            }, delayTime);
+        }
     }
 }
 
