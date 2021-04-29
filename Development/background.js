@@ -171,8 +171,12 @@ async function checkProductStatus(product, data, positiveKeys, negativeKeys) {
         }
     });
 
-    const availableStyles = productDetail.styles.filter(style => style.negative !== 1)
+    let availableStyles = productDetail.styles.filter(style => style.negative !== 1)
                                                 .filter(product => product.positive !== 0);
+
+    if (!availableStyles.length) {
+        availableStyles = [productDetail.styles[0]];
+    }
 
     if (availableStyles.length) {
         availableStyles.sort((a, b) => {
