@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "TweetNinja Extension",
 	"description": "An extension developed by @TweetNinjaLLC",
-	"version": "3.1.1",
+	"version": "3.2.0",
 	"icons": {
 		"128": "./icons/logo.png"
 	},
