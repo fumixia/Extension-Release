@@ -79,20 +79,13 @@ async function monitor(data, positiveKeys, negativeKeys) {
 
     console.log('---monitoring product---');
 
-    setTimeout(async () => {
-        if (monitorState) {
-            return
-        }
+    const productResult = await selectProduct(data, positiveKeys, negativeKeys, delayTime);
 
-        if (selectedProductData !== null) {
-            await checkProductStatus(selectedProductData, data, positiveKeys, negativeKeys, delayTime);
-            return;
-        }
-
-        await selectProduct(data, positiveKeys, negativeKeys, delayTime);
-
-        await monitor(data, positiveKeys, negativeKeys);
-    }, delayTime);
+    if (!productResult) {
+        setTimeout(() => {
+            monitor(data, positiveKeys, negativeKeys);
+        }, delayTime);
+    }
 }
 
 async function selectProduct(data, positiveKeys, negativeKeys, delayTime) {
@@ -102,7 +95,9 @@ async function selectProduct(data, positiveKeys, negativeKeys, delayTime) {
 
     const productStm = await fetch(`https://www.supremenewyork.com/mobile_stock.json`);
     const productsData = await productStm.json();
-    const products = productsData.products_and_categories[data.supreme_category];
+    let products = productsData.products_and_categories[data.supreme_category];
+
+    if (!products) { products = [] }
 
     for (let i = 0; i < products.length; i++) {
         products[i].negative = 0;
@@ -137,7 +132,10 @@ async function selectProduct(data, positiveKeys, negativeKeys, delayTime) {
 
         selectedProductData = selectedProduct;
 
-        checkProductStatus(selectedProduct, data, positiveKeys, negativeKeys, delayTime);
+        await checkProductStatus(selectedProduct, data, positiveKeys, negativeKeys, delayTime);
+        return true
+    } else {
+        return false
     }
 }
 
@@ -186,19 +184,17 @@ async function checkProductStatus(product, data, positiveKeys, negativeKeys, del
 
         const selectedStyle = availableStyles[0];
 
-        selectedStyle.sizes.forEach(size => {
+        for (let i = 0; i < selectedStyle.sizes.length; i++) {
+            let size = selectedStyle.sizes[i];
             if ((size.name.toLowerCase() === data.supreme_size || size.name === "N/A" || data.supreme_size === "random") && size.stock_level === 1) {
                 chrome.tabs.create({url: `https://www.supremenewyork.com/shop/${product.id}`}, (tab) => {
                     chrome.tabs.sendMessage(tab.id, {ping: true}, res => {
                         if (res && res.pong) {
                             chrome.tabs.sendMessage(tab.id, {action: 'supreme-monitor-result', data: {
-                                style: selectedStyle.id,
-                                size: size.name !== "N/A" ? size.id : "N/A",
-                                config: data
-                            }});
-
-                            selectedProductData = null;
-                            monitorState = true;
+                                    style: selectedStyle.id,
+                                    size: size.name !== "N/A" ? size.id : "N/A",
+                                    config: data
+                                }});
                         } else {
                             chrome.tabs.executeScript(tab.id, {file: "scripts/supreme_monitor_proceed.js"}, function(){
                                 if(chrome.runtime.lastError) {
@@ -207,24 +203,26 @@ async function checkProductStatus(product, data, positiveKeys, negativeKeys, del
                                 }
                                 // OK, now it's injected and ready
                                 chrome.tabs.sendMessage(tab.id, {action: 'supreme-monitor-result', data: {
-                                    style: selectedStyle.id,
-                                    size: size.name !== "N/A" ? size.id : "N/A",
-                                    config: data
-                                }});
-
-                                selectedProductData = null;
-                                monitorState = true;
+                                        style: selectedStyle.id,
+                                        size: size.name !== "N/A" ? size.id : "N/A",
+                                        config: data
+                                    }});
                             });
                         }
                     })
                 });
+
+                selectedProductData = null;
+                monitorState = true;
             }
-        });
+        }
 
         if (!monitorState) {
             setTimeout(() => {
                 checkProductStatus(product, data, positiveKeys, negativeKeys, delayTime);
             }, delayTime);
+        } else {
+            return true
         }
     }
 }
