@@ -6,6 +6,7 @@ const shipping_fullname = document.getElementById("shipping_fullname");
 const shipping_address1 = document.getElementById("shipping_address1");
 const shipping_address2 = document.getElementById("shipping_address2");
 const shipping_country = document.getElementById("shipping_country");
+const shipping_state_select = document.getElementById("shipping_state_select");
 const shipping_state = document.getElementById("shipping_state");
 const shipping_city = document.getElementById("shipping_city");
 const shipping_zip = document.getElementById("shipping_zip");
@@ -14,6 +15,7 @@ const billing_fullname = document.getElementById("billing_fullname");
 const billing_address1 = document.getElementById("billing_address1");
 const billing_address2 = document.getElementById("billing_address2");
 const billing_country = document.getElementById("billing_country");
+const billing_state_select = document.getElementById("billing_state_select");
 const billing_state = document.getElementById("billing_state");
 const billing_city = document.getElementById("billing_city");
 const billing_zip = document.getElementById("billing_zip");
@@ -2518,21 +2520,26 @@ async function getCountryAndStates () {
 getCountryAndStates();
 
 shipping_country.addEventListener('change', (event) => {
-    shipping_state.innerHTML = '<option disabled selected value="">State</option>';
+    shipping_state_select.innerHTML = '<option disabled selected value="">State</option>';
+    billing_state_select.innerHTML = '<option disabled selected value="">State</option>';
+
+    shipping_state.value = "";
+    billing_state.value = "";
+
     countryData.forEach(country => {
         if (country.code === event.target.value && country.states !== null) {
             country.states.forEach(state => {
                 let stateElm = document.createElement('option');
                 stateElm.textContent = state.name;
                 stateElm.value = state.code;
-                shipping_state.appendChild(stateElm);
+                shipping_state_select.appendChild(stateElm);
             });
 
             country.states.forEach(state => {
                 let stateElm = document.createElement('option');
                 stateElm.textContent = state.name;
                 stateElm.value = state.code;
-                billing_state.appendChild(stateElm);
+                billing_state_select.appendChild(stateElm);
             })
         }
         return
@@ -2540,18 +2547,28 @@ shipping_country.addEventListener('change', (event) => {
 });
 
 billing_country.addEventListener('change', (event) => {
-    billing_state.innerHTML = '<option disabled selected value="">State</option>';
+    billing_state_select.innerHTML = '<option disabled selected value="">State</option>';
+    billing_state.value = "";
+
     countryData.forEach(country => {
         if (country.code === event.target.value && country.states !== null) {
             country.states.forEach(state => {
                 let stateElm = document.createElement('option');
                 stateElm.textContent = state.name;
                 stateElm.value = state.code;
-                billing_state.appendChild(stateElm);
+                billing_state_select.appendChild(stateElm);
             })
         }
         return
     })
+});
+
+shipping_state_select.addEventListener('change', event => {
+    event.target.nextElementSibling.value = event.target.value;
+});
+
+billing_state_select.addEventListener('change', event => {
+    event.target.nextElementSibling.value = event.target.value;
 });
 
 //profile save button listener
@@ -2566,7 +2583,7 @@ same_as_shipping.addEventListener("click", function () {
                 let stateElm = document.createElement('option');
                 stateElm.textContent = state.name;
                 stateElm.value = state.code;
-                billing_state.appendChild(stateElm);
+                billing_state_select.appendChild(stateElm);
             })
         }
         return
@@ -2618,7 +2635,7 @@ function edit_profile() {
                         let stateElm = document.createElement('option');
                         stateElm.textContent = state.name;
                         stateElm.value = state.code;
-                        shipping_state.appendChild(stateElm);
+                        shipping_state_select.appendChild(stateElm);
                     })
                 }
 
@@ -2627,7 +2644,7 @@ function edit_profile() {
                         let stateElm = document.createElement('option');
                         stateElm.textContent = state.name;
                         stateElm.value = state.code;
-                        billing_state.appendChild(stateElm);
+                        billing_state_select.appendChild(stateElm);
                     })
                 }
             });
@@ -2788,7 +2805,7 @@ function duplicate_profile() {
                         let stateElm = document.createElement('option');
                         stateElm.textContent = state.name;
                         stateElm.value = state.code;
-                        shipping_state.appendChild(stateElm);
+                        shipping_state_select.appendChild(stateElm);
                     })
                 }
 
@@ -2797,7 +2814,7 @@ function duplicate_profile() {
                         let stateElm = document.createElement('option');
                         stateElm.textContent = state.name;
                         stateElm.value = state.code;
-                        billing_state.appendChild(stateElm);
+                        billing_state_select.appendChild(stateElm);
                     })
                 }
             });
